@@ -1,0 +1,813 @@
+{
+  "date": "2026-11-12",
+  "scene": "res://scenes/art_tests/CharacterShowcase.tscn",
+  "run_id": "0dcbc600",
+  "engine": "Godot 4.7.2 Standard",
+  "hardware": "Intel Core i3-1115G4 / Intel UHD / Windows 11",
+  "settings": {
+    "renderer": "gl_compatibility",
+    "resolution": [
+      1152,
+      648
+    ],
+    "msaa": 4,
+    "max_fps": 60,
+    "vsync": "disabled",
+    "orthographic_size": 26,
+    "warmup_seconds": 4,
+    "sample_seconds": 8,
+    "build": "debug process via Godot MCP; not exported release",
+    "population_layout": "20 fixed slots; 10 uses alternate slots; isolated demonstration paths; no crowd simulation"
+  },
+  "benchmarks": [
+    {
+      "count": 10,
+      "performance": {
+        "run_id": "0dcbc600",
+        "monitors": {
+          "audio": {
+            "output_latency_ms": 10
+          },
+          "engine": {
+            "display": "Windows",
+            "frames_drawn": 1471,
+            "max_fps": 60,
+            "physics_ticks_per_second": 60,
+            "rendering_method": "gl_compatibility",
+            "time_scale": 1,
+            "vsync": "disabled"
+          },
+          "memory": {
+            "message_buffer_max_mib": 0,
+            "static_max_mib": 101.25,
+            "static_mib": 87.95
+          },
+          "objects": {
+            "nodes": 29,
+            "objects": 1588,
+            "orphan_nodes": 0,
+            "resources": 31
+          },
+          "pipeline_compilations": {
+            "canvas": 0,
+            "draw": 0,
+            "mesh": 0,
+            "specialization": 0,
+            "surface": 0
+          },
+          "render": {
+            "buffer_mem_mib": 10.23,
+            "draw_calls_in_frame": 28,
+            "objects_in_frame": 110,
+            "primitives_in_frame": 124902,
+            "texture_mem_mib": 29.3,
+            "video_mem_mib": 39.53
+          },
+          "time": {
+            "fps": 60,
+            "navigation_ms": 0.003,
+            "physics_ms": 0.05,
+            "process_ms": 2.256
+          }
+        },
+        "sample": {
+          "avg_fps": 60,
+          "delta": {
+            "nodes": 0,
+            "objects": 4,
+            "orphan_nodes": 0,
+            "static_memory_mib": 0.04
+          },
+          "draw_calls": {
+            "avg": 28,
+            "max": 28,
+            "median": 28,
+            "min": 28,
+            "p95": 28
+          },
+          "frame_ms": {
+            "avg": 16.666,
+            "max": 17.207,
+            "median": 16.666,
+            "min": 16.125,
+            "p95": 17.004
+          },
+          "frames": 481,
+          "physics_ms": {
+            "avg": 0.047,
+            "max": 0.065,
+            "median": 0.043,
+            "min": 0.036,
+            "p95": 0.065
+          },
+          "process_ms": {
+            "avg": 3.844,
+            "max": 15.111,
+            "median": 2.256,
+            "min": 2.079,
+            "p95": 15.111
+          },
+          "seconds": 8.016,
+          "spike_count": 0,
+          "spike_threshold_ms": 33.332
+        }
+      },
+      "renderer": {
+        "run_id": "0dcbc600",
+        "child_count": 6,
+        "class": "Node3D",
+        "path": ".",
+        "properties": {
+          "get_showcase_state()": {
+            "demo_updates": 731,
+            "elapsed": 12.1661870000001,
+            "frames_presented": 729,
+            "paused": false,
+            "render": {
+              "batches": 3,
+              "character_nodes": 0,
+              "count": 10,
+              "first_limb": "Transform3D(-0.10079999, 0, 9.231845e-09, 0, 0.062399995, 0, -8.812215e-09, 0, -0.1056, -7, 1.3509487, -5.4)",
+              "lod": 0,
+              "parts": 281,
+              "phases": [
+                0.576527416706085,
+                0.126622393727303,
+                0.695808887481689,
+                0.455578565597534,
+                0.337600648403168,
+                0.0310728028416634,
+                0.581167459487915,
+                0.695808887481689,
+                0.910124003887177,
+                0.7921462059021
+              ],
+              "pose_updates": 9,
+              "pose_usec": 226,
+              "positions": [
+                "Vector3(-7, 0, -5.4)",
+                "Vector3(0, 0, -5.8154674)",
+                "Vector3(7, 0, -5.9838133)",
+                "Vector3(-3.5, 0, -2.633813)",
+                "Vector3(3.5, 0, -1.8)",
+                "Vector3(-7, 0, 1.8)",
+                "Vector3(0, 0, 0.9845325)",
+                "Vector3(7, 0, 1.216187)",
+                "Vector3(-3.5, 0, 4.966187)",
+                "Vector3(3.5, 0, 5.4)"
+              ],
+              "states": [
+                2,
+                4,
+                2,
+                2,
+                0
+              ],
+              "submission_usec": 698,
+              "total_pose_updates": 7299,
+              "transitions": [
+                22,
+                10,
+                2,
+                18,
+                6
+              ]
+            },
+            "renderer_cpu_max_usec": 938,
+            "renderer_cpu_mean_usec": 529.36488340192
+          }
+        },
+        "script": "res://scripts/art_tests/character_showcase.gd"
+      }
+    },
+    {
+      "count": 20,
+      "performance": {
+        "run_id": "0dcbc600",
+        "monitors": {
+          "audio": {
+            "output_latency_ms": 10
+          },
+          "engine": {
+            "display": "Windows",
+            "frames_drawn": 2612,
+            "max_fps": 60,
+            "physics_ticks_per_second": 60,
+            "rendering_method": "gl_compatibility",
+            "time_scale": 1,
+            "vsync": "disabled"
+          },
+          "memory": {
+            "message_buffer_max_mib": 0,
+            "static_max_mib": 101.25,
+            "static_mib": 88.18
+          },
+          "objects": {
+            "nodes": 29,
+            "objects": 1588,
+            "orphan_nodes": 0,
+            "resources": 31
+          },
+          "pipeline_compilations": {
+            "canvas": 0,
+            "draw": 0,
+            "mesh": 0,
+            "specialization": 0,
+            "surface": 0
+          },
+          "render": {
+            "buffer_mem_mib": 10.25,
+            "draw_calls_in_frame": 28,
+            "objects_in_frame": 110,
+            "primitives_in_frame": 247062,
+            "texture_mem_mib": 29.3,
+            "video_mem_mib": 39.54
+          },
+          "time": {
+            "fps": 60,
+            "navigation_ms": 0.003,
+            "physics_ms": 0.033,
+            "process_ms": 3.067
+          }
+        },
+        "sample": {
+          "avg_fps": 60,
+          "delta": {
+            "nodes": 0,
+            "objects": 4,
+            "orphan_nodes": 0,
+            "static_memory_mib": 0.04
+          },
+          "draw_calls": {
+            "avg": 28,
+            "max": 28,
+            "median": 28,
+            "min": 28,
+            "p95": 28
+          },
+          "frame_ms": {
+            "avg": 16.666,
+            "max": 16.811,
+            "median": 16.666,
+            "min": 16.518,
+            "p95": 16.683
+          },
+          "frames": 481,
+          "physics_ms": {
+            "avg": 0.042,
+            "max": 0.081,
+            "median": 0.033,
+            "min": 0.031,
+            "p95": 0.081
+          },
+          "process_ms": {
+            "avg": 2.963,
+            "max": 3.119,
+            "median": 2.937,
+            "min": 2.825,
+            "p95": 3.119
+          },
+          "seconds": 8.016,
+          "spike_count": 0,
+          "spike_threshold_ms": 33.332
+        }
+      },
+      "renderer": {
+        "run_id": "0dcbc600",
+        "child_count": 6,
+        "class": "Node3D",
+        "path": ".",
+        "properties": {
+          "get_showcase_state()": {
+            "demo_updates": 731,
+            "elapsed": 12.1661800000001,
+            "frames_presented": 729,
+            "paused": false,
+            "render": {
+              "batches": 3,
+              "character_nodes": 0,
+              "count": 20,
+              "first_limb": "Transform3D(-0.10079999, 0, 9.231845e-09, 0, 0.062399995, 0, -8.812215e-09, 0, -0.1056, -7, 1.3509488, -5.4)",
+              "lod": 0,
+              "parts": 547,
+              "phases": [
+                0.57652223110199,
+                0.273753076791763,
+                0.21751980483532,
+                0.246686190366745,
+                0.695802569389343,
+                0.0310674998909235,
+                0.728298425674438,
+                0.672065258026123,
+                0.70123165845871,
+                0.695802569389343,
+                0.485613167285919,
+                0.18284410238266,
+                0.126610785722733,
+                0.155777186155319,
+                0.695802569389343,
+                0.940158367156982,
+                0.637389421463013,
+                0.581156373023987,
+                0.61032235622406,
+                0.695802569389343
+              ],
+              "pose_updates": 4,
+              "pose_usec": 94,
+              "positions": [
+                "Vector3(-7, 0, -5.4)",
+                "Vector3(-3.5, 0, -6.4338202)",
+                "Vector3(0, 0, -5.81545)",
+                "Vector3(3.5, 0, -5.4)",
+                "Vector3(7, 0, -5.98382)",
+                "Vector3(-7, 0, -1.8)",
+                "Vector3(-3.5, 0, -2.63382)",
+                "Vector3(0, 0, -2.4154499)",
+                "Vector3(3.5, 0, -1.8)",
+                "Vector3(7, 0, -2.38382)",
+                "Vector3(-7, 0, 1.8)",
+                "Vector3(-3.5, 0, 1.1661799)",
+                "Vector3(0, 0, 0.98454994)",
+                "Vector3(3.5, 0, 1.8)",
+                "Vector3(7, 0, 1.21618)",
+                "Vector3(-7, 0, 5.4)",
+                "Vector3(-3.5, 0, 4.9661803)",
+                "Vector3(0, 0, 4.38455)",
+                "Vector3(3.5, 0, 5.4)",
+                "Vector3(7, 0, 4.81618)"
+              ],
+              "states": [
+                4,
+                8,
+                4,
+                4,
+                0
+              ],
+              "submission_usec": 1715,
+              "total_pose_updates": 14584,
+              "transitions": [
+                44,
+                20,
+                4,
+                36,
+                12
+              ]
+            },
+            "renderer_cpu_max_usec": 2123,
+            "renderer_cpu_mean_usec": 1018.58573388203
+          }
+        },
+        "script": "res://scripts/art_tests/character_showcase.gd"
+      }
+    }
+  ],
+  "lod": [
+    {
+      "lod": 0,
+      "parts": 547,
+      "seconds": 1.3166086666666992,
+      "frames": 79,
+      "pose_updates": 1578,
+      "hz_per_character": 59.926690441552154
+    },
+    {
+      "lod": 1,
+      "parts": 412,
+      "seconds": 1.29994366666668,
+      "frames": 78,
+      "pose_updates": 784,
+      "hz_per_character": 30.15515287713719
+    },
+    {
+      "lod": 2,
+      "parts": 295,
+      "seconds": 1.299951,
+      "frames": 78,
+      "pose_updates": 257,
+      "hz_per_character": 9.884987972623582
+    }
+  ],
+  "automatic_lod": [
+    {
+      "size": 40,
+      "lod": 1,
+      "parts": 412
+    },
+    {
+      "size": 70,
+      "lod": 2,
+      "parts": 295
+    },
+    {
+      "size": 26,
+      "lod": 0,
+      "parts": 547
+    }
+  ],
+  "five_states": {
+    "run_id": "0dcbc600",
+    "child_count": 6,
+    "class": "Node3D",
+    "path": ".",
+    "properties": {
+      "get_showcase_state()": {
+        "demo_updates": 107,
+        "elapsed": 1.783265,
+        "frames_presented": 106,
+        "paused": false,
+        "render": {
+          "batches": 3,
+          "character_nodes": 0,
+          "count": 20,
+          "first_limb": "Transform3D(-0.10079999, 0, 9.231845e-09, 0, 0.062399995, 0, -8.812215e-09, 0, -0.1056, -7, 1.3527596, -5.4)",
+          "lod": 0,
+          "parts": 547,
+          "phases": [
+            0.980796992778778,
+            0.890840590000153,
+            0.994211971759796,
+            0.90686970949173,
+            0.745586931705475,
+            0.43534255027771,
+            0.345385760068893,
+            0.448757439851761,
+            0.361415416002274,
+            0.745586931705475,
+            0.889887928962708,
+            0.799931406974792,
+            0.877261221408844,
+            0.800960659980774,
+            0.701727271080017,
+            0.340266704559326,
+            0.237810000777245,
+            0.331806749105453,
+            0.255506277084351,
+            0.701727271080017
+          ],
+          "pose_updates": 20,
+          "pose_usec": 590,
+          "positions": [
+            "Vector3(-7, 0, -5.4)",
+            "Vector3(-3.5, 0, -5.983265)",
+            "Vector3(0, 0, -4.5418377)",
+            "Vector3(3.5, 0, -5.4)",
+            "Vector3(7, 0, -6.15)",
+            "Vector3(-7, 0, -1.8)",
+            "Vector3(-3.5, 0, -2.583265)",
+            "Vector3(0, 0, -0.74183744)",
+            "Vector3(3.5, 0, -1.8)",
+            "Vector3(7, 0, -2.55)",
+            "Vector3(-7, 0, 1.8)",
+            "Vector3(-3.5, 0, 0.81673497)",
+            "Vector3(0, 0, 2.983504)",
+            "Vector3(3.5, 0, 1.8)",
+            "Vector3(7, 0, 1.05)",
+            "Vector3(-7, 0, 5.4)",
+            "Vector3(-3.5, 0, 4.233402)",
+            "Vector3(0, 0, 6.3835044)",
+            "Vector3(3.5, 0, 5.4)",
+            "Vector3(7, 0, 4.65)"
+          ],
+          "states": [
+            4,
+            4,
+            4,
+            4,
+            4
+          ],
+          "submission_usec": 1286,
+          "total_pose_updates": 2140,
+          "transitions": [
+            4,
+            8,
+            4,
+            8,
+            4
+          ]
+        },
+        "renderer_cpu_max_usec": 1901,
+        "renderer_cpu_mean_usec": 993.490566037736
+      }
+    },
+    "script": "res://scripts/art_tests/character_showcase.gd"
+  },
+  "movement_before": {
+    "run_id": "0dcbc600",
+    "results": [
+      {
+        "action": "call",
+        "method": "get_character_probe",
+        "path": "Characters",
+        "return": {
+          "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.08, 0.035757612)",
+          "heading": 0,
+          "phase": 0.352424293756485,
+          "position": "Vector3(-3.5, 0, -6.4448485)",
+          "rendered_thigh": "Transform3D(0.1568, 0, 0, 0, 0.19589072, -0.051073562, 0, 0.06309087, 0.15857822, -3.6029, 0.64348257, -6.488269)",
+          "state": "Walk",
+          "thigh": "Transform3D(1, 0, 0, 0, 0.95185, -0.30656397, 0, 0.30656397, 0.95185, -0.105, 0.84698486, 0)"
+        }
+      },
+      {
+        "action": "call",
+        "method": "get_character_probe",
+        "path": "Characters",
+        "return": {
+          "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.31944722, 0.016959764)",
+          "heading": 1.51424145698547,
+          "phase": 0.715436518192291,
+          "position": "Vector3(0, 0, -5.0121217)",
+          "rendered_thigh": "Transform3D(-0.0010845552, 0.15768161, 0.11227159, 0, 0.13869162, -0.12764996, -0.15999633, -0.0010688647, -0.00076104706, -0.14946124, 0.70812154, -4.8644395)",
+          "state": "Run",
+          "thigh": "Transform3D(1, 0, 0, 0, 0.6604363, -0.7508821, 0, 0.7508821, 0.6604363, -0.105, 0.84020877, 0)"
+        }
+      },
+      {
+        "action": "call",
+        "method": "get_character_probe",
+        "path": "Characters",
+        "return": {
+          "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.08, 0)",
+          "heading": 1.57079637050629,
+          "phase": 0.135299116373062,
+          "position": "Vector3(3.5, 0, -5.4)",
+          "rendered_thigh": "Transform3D(-7.133698e-09, 0.041595373, 0.17009915, 0, 0.21012248, -0.033672445, -0.16319999, -1.8181916e-09, -7.4352706e-09, 3.4603853, 0.7019602, -5.2929)",
+          "state": "Idle",
+          "thigh": "Transform3D(1, 0, 0, 0, 0.98096406, -0.19418943, 0, 0.19418943, 0.98096406, -0.105, 0.8843891, 0)"
+        }
+      }
+    ]
+  },
+  "movement_after": {
+    "run_id": "0dcbc600",
+    "results": [
+      {
+        "action": "call",
+        "method": "get_character_probe",
+        "path": "Characters",
+        "return": {
+          "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.10753354, -0.29016596)",
+          "heading": -2.15865421295166,
+          "phase": 0.970490634441376,
+          "position": "Vector3(-3.5, 0, -6.137085)",
+          "rendered_thigh": "Transform3D(-0.08695811, -0.11234008, -0.10463583, 0, 0.15533142, -0.1092881, 0.13047807, -0.0748699, -0.06973535, -3.3359432, 0.661622, -6.1514063)",
+          "state": "Walk",
+          "thigh": "Transform3D(1, 0, 0, 0, 0.7547688, -0.65599096, 0, 0.65599096, 0.7547688, -0.105, 0.82607824, 0)"
+        }
+      },
+      {
+        "action": "call",
+        "method": "get_character_probe",
+        "path": "Characters",
+        "return": {
+          "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.31329814, 0.07123306)",
+          "heading": 0,
+          "phase": 0.681165754795074,
+          "position": "Vector3(0, 0, -6.5572886)",
+          "rendered_thigh": "Transform3D(0.16, 0, 0, 0, 0.15408027, -0.11550764, 0, 0.1426859, 0.12473165, -0.105, 0.68116826, -6.651513)",
+          "state": "Run",
+          "thigh": "Transform3D(1, 0, 0, 0, 0.6782151, -0.73486346, 0, 0.73486346, 0.6782151, -0.105, 0.83744717, 0)"
+        }
+      },
+      {
+        "action": "call",
+        "method": "get_character_probe",
+        "path": "Characters",
+        "return": {
+          "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.08, 0)",
+          "heading": 1.57079637050629,
+          "phase": 0.289815694093704,
+          "position": "Vector3(3.5, 0, -5.4)",
+          "rendered_thigh": "Transform3D(-7.133698e-09, 0.039639052, 0.17040503, 0, 0.21050031, -0.03208876, -0.16319999, -1.732678e-09, -7.44864e-09, 3.4622486, 0.70307684, -5.2929)",
+          "state": "Idle",
+          "thigh": "Transform3D(1, 0, 0, 0, 0.98272794, -0.18505628, 0, 0.18505628, 0.98272794, -0.105, 0.88583666, 0)"
+        }
+      }
+    ]
+  },
+  "stop": {
+    "a": {
+      "run_id": "0dcbc600",
+      "results": [
+        {
+          "action": "call",
+          "method": "get_character_probe",
+          "path": "Characters",
+          "return": {
+            "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.1363035, -0.11719136)",
+            "heading": 0,
+            "phase": 0.219298243522644,
+            "position": "Vector3(7, 0, -6.15)",
+            "rendered_thigh": "Transform3D(0.16639999, 0, 0, 0, 0.18211326, -0.09759149, 0, 0.120554194, 0.14742503, 6.8908, 0.71916753, -6.2648134)",
+            "state": "Stop",
+            "thigh": "Transform3D(1, 0, 0, 0, 0.8750215, -0.484084, 0, 0.484084, 0.8750215, -0.105, 0.863675, 0)"
+          }
+        }
+      ]
+    },
+    "b": {
+      "run_id": "0dcbc600",
+      "results": [
+        {
+          "action": "call",
+          "method": "get_character_probe",
+          "path": "Characters",
+          "return": {
+            "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.08, 0)",
+            "heading": 0,
+            "phase": 0.100000031292439,
+            "position": "Vector3(7, 0, -6.15)",
+            "rendered_thigh": "Transform3D(0.16639999, 0, 0, 0, 0.21397737, -0.035399873, 0, 0.04372925, 0.17321977, 6.8908, 0.7149418, -6.191647)",
+            "state": "Idle",
+            "thigh": "Transform3D(1, 0, 0, 0, 0.97974986, -0.20022552, 0, 0.20022552, 0.97974986, -0.105, 0.88339406, 0)"
+          }
+        }
+      ]
+    }
+  },
+  "pause": {
+    "a": {
+      "run_id": "0dcbc600",
+      "child_count": 6,
+      "class": "Node3D",
+      "path": ".",
+      "properties": {
+        "get_showcase_state()": {
+          "demo_updates": 140,
+          "elapsed": 2.31666666666666,
+          "frames_presented": 142,
+          "paused": true,
+          "render": {
+            "batches": 3,
+            "character_nodes": 0,
+            "count": 20,
+            "first_limb": "Transform3D(-0.10079999, 0, 9.231845e-09, 0, 0.062399995, 0, -8.812215e-09, 0, -0.1056, -7, 1.3573704, -5.4)",
+            "lod": 0,
+            "parts": 547,
+            "phases": [
+              0.114165998995304,
+              0.424242049455643,
+              0.827652513980865,
+              0.116059996187687,
+              0.108333371579647,
+              0.568711280822754,
+              0.878787100315094,
+              0.28219810128212,
+              0.570605576038361,
+              0.108333371579647,
+              0.023256802931428,
+              0.333332866430283,
+              0.73674339056015,
+              0.0251507442444563,
+              0.108333371579647,
+              0.477802127599716,
+              0.787878096103668,
+              0.191289097070694,
+              0.479696393013,
+              0.108333371579647
+            ],
+            "pose_updates": 10,
+            "pose_usec": 205,
+            "positions": [
+              "Vector3(-7, 0, -5.4)",
+              "Vector3(-3.5, 0, -6.516667)",
+              "Vector3(0, 0, -5.1916666)",
+              "Vector3(3.5, 0, -5.4)",
+              "Vector3(7, 0, -6.15)",
+              "Vector3(-7, 0, -1.8)",
+              "Vector3(-3.5, 0, -2.8833332)",
+              "Vector3(0, 0, -1.7916666)",
+              "Vector3(3.5, 0, -1.8)",
+              "Vector3(7, 0, -2.55)",
+              "Vector3(-7, 0, 1.8)",
+              "Vector3(-3.5, 0, 0.9166666)",
+              "Vector3(0, 0, 1.6083332)",
+              "Vector3(3.5, 0, 1.8)",
+              "Vector3(7, 0, 1.05)",
+              "Vector3(-7, 0, 5.4)",
+              "Vector3(-3.5, 0, 4.7166667)",
+              "Vector3(0, 0, 5.008333)",
+              "Vector3(3.5, 0, 5.4)",
+              "Vector3(7, 0, 4.65)"
+            ],
+            "states": [
+              12,
+              4,
+              4,
+              0,
+              0
+            ],
+            "submission_usec": 1442,
+            "total_pose_updates": 2870,
+            "transitions": [
+              12,
+              8,
+              4,
+              8,
+              4
+            ]
+          },
+          "renderer_cpu_max_usec": 2945,
+          "renderer_cpu_mean_usec": 1045.52816901408
+        }
+      },
+      "script": "res://scripts/art_tests/character_showcase.gd"
+    },
+    "b": {
+      "run_id": "0dcbc600",
+      "child_count": 6,
+      "class": "Node3D",
+      "path": ".",
+      "properties": {
+        "get_showcase_state()": {
+          "demo_updates": 140,
+          "elapsed": 2.31666666666666,
+          "frames_presented": 173,
+          "paused": true,
+          "render": {
+            "batches": 3,
+            "character_nodes": 0,
+            "count": 20,
+            "first_limb": "Transform3D(-0.10079999, 0, 9.231845e-09, 0, 0.062399995, 0, -8.812215e-09, 0, -0.1056, -7, 1.3573704, -5.4)",
+            "lod": 0,
+            "parts": 547,
+            "phases": [
+              0.114165998995304,
+              0.424242049455643,
+              0.827652513980865,
+              0.116059996187687,
+              0.108333371579647,
+              0.568711280822754,
+              0.878787100315094,
+              0.28219810128212,
+              0.570605576038361,
+              0.108333371579647,
+              0.023256802931428,
+              0.333332866430283,
+              0.73674339056015,
+              0.0251507442444563,
+              0.108333371579647,
+              0.477802127599716,
+              0.787878096103668,
+              0.191289097070694,
+              0.479696393013,
+              0.108333371579647
+            ],
+            "pose_updates": 10,
+            "pose_usec": 248,
+            "positions": [
+              "Vector3(-7, 0, -5.4)",
+              "Vector3(-3.5, 0, -6.516667)",
+              "Vector3(0, 0, -5.1916666)",
+              "Vector3(3.5, 0, -5.4)",
+              "Vector3(7, 0, -6.15)",
+              "Vector3(-7, 0, -1.8)",
+              "Vector3(-3.5, 0, -2.8833332)",
+              "Vector3(0, 0, -1.7916666)",
+              "Vector3(3.5, 0, -1.8)",
+              "Vector3(7, 0, -2.55)",
+              "Vector3(-7, 0, 1.8)",
+              "Vector3(-3.5, 0, 0.9166666)",
+              "Vector3(0, 0, 1.6083332)",
+              "Vector3(3.5, 0, 1.8)",
+              "Vector3(7, 0, 1.05)",
+              "Vector3(-7, 0, 5.4)",
+              "Vector3(-3.5, 0, 4.7166667)",
+              "Vector3(0, 0, 5.008333)",
+              "Vector3(3.5, 0, 5.4)",
+              "Vector3(7, 0, 4.65)"
+            ],
+            "states": [
+              12,
+              4,
+              4,
+              0,
+              0
+            ],
+            "submission_usec": 1250,
+            "total_pose_updates": 3490,
+            "transitions": [
+              12,
+              8,
+              4,
+              8,
+              4
+            ]
+          },
+          "renderer_cpu_max_usec": 2945,
+          "renderer_cpu_mean_usec": 1078.02312138728
+        }
+      },
+      "script": "res://scripts/art_tests/character_showcase.gd"
+    }
+  },
+  "runtime_errors": 0,
+  "runtime_warnings": 0,
+  "stopped": true,
+  "limits": [
+    "Single short sample per population; no 600/1000 3D claim or release benchmark.",
+    "CPU renderer statistics cover warmup plus sample; MCP process monitor is not GPU timing.",
+    "Orthographic LOD shared across the renderer; root/part transform submission still occurs each frame.",
+    "Capture of images can temporarily stall frame time outside the benchmark windows."
+  ]
+}

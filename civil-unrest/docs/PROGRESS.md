@@ -1,5 +1,16 @@
 # Progressi CivilUnrest
 
+## Personaggi 3D modulari e showcase indipendente — 2026-11-12
+
+- Nuova scena `scenes/art_tests/CharacterShowcase.tscn`: 10/20 personaggi originali, archetipi civile/manifestante/polizia, varianti cromatiche, giacche/zaini e casco/gilet/equipaggiamento visivo. Luce coperta e palette coerenti con ItalianStreet, telecamera ortografica con zoom e comandi esistenti; nessun gameplay.
+- Moduli in `scripts/characters/`: catalogo, stato visivo, banca condivisa di pose procedurali Idle/Walk/Run/Turn/Stop, adattatore in sola lettura verso CrowdState e renderer con tre MultiMesh. Zero nodi o fisica per individuo. LOD 547/412/295 parti a 20 personaggi; aggiornamenti pose misurati 59,93/30,16/9,88 Hz, movimento della radice per frame.
+- Verifiche eseguite: validazione MCP, import headless exit 0; **6.314 controlli automatici superati** (pose/appoggio, transizioni, orientamento, replay visivo deterministico, adattatore/input core invariati, caricamento risorsa). Avvio MCP, screenshot standard/ravvicinato e secondo frame analizzati, movimento degli arti/posizioni, Stop → Idle, pausa, zoom e LOD controllati dal vivo. Run finale `0dcbc600`: zero errori/warning, poi arrestato.
+- Prestazioni preliminari **debug**, Intel i3-1115G4/UHD, Windows 11, Godot 4.7.2 Compatibility, 1152×648, MSAA 4×, limite 60/VSync off, LOD 0, 4 s warm-up + 8,016 s (481 frame), una prova per quantità: **10 personaggi: 60 FPS, p95 17,004 ms, CPU renderer 0,529 ms, statica 87,95 MiB; 20: 60 FPS, p95 16,683 ms, CPU renderer 1,019 ms, statica 88,18 MiB**. CPU renderer media sul warm-up più campione, non CPU core/GPU. Nessuna misura a 600/1.000 né release; nessuna estrapolazione.
+- ItalianStreet, Main, scene test/benchmark e algoritmi 2D invariati: confronto SHA-256 dei 250 file protetti preesistenti. Nessun commit, download, dipendenza o modifica a project.godot/skills/MCP/globali. Suite benchmark 2D non ripetuta perché invariata.
+- Dettagli, API di integrazione e limiti: [CHARACTERS.md](CHARACTERS.md). Screenshot reali e dati: [standard](screenshots/characters/standard.png), [ravvicinato](screenshots/characters/closeup.png), [movimento](screenshots/characters/animation_next.png), [qa.json](screenshots/characters/qa.json).
+- Limiti: modelli a parti rigide, niente animazione della stoffa o IK del terreno; possibile scivolamento durante inversioni/blend. LOD comune adatto alla camera ortografica, invio delle parti ancora per frame. Showcase isolato, adattatore testato ma nessuna integrazione nella scena del gioco. Prossimo passo: valutazione artistica e benchmark combinato solo su richiesta.
+
+
 ## Prototipo artistico italiano indipendente — 2026-11-12
 
 - Ingresso autonomo: `res://scenes/art_tests/ItalianStreet.tscn` (F6 o avvio esplicito MCP). Nessuna integrazione in Main o nella simulazione. Diorama in metri: palazzo di quattro piani con balconi, persiane, cornici, cornicione, tetto a due falde, grondaie, negozio e numero civico; strada, attraversamento pedonale, parcheggi, tombini, lampioni, cestini, dissuasori, fioriere e alberi; automobile civile, mezzo della polizia e riferimento umano statico alto circa 1,78 m.

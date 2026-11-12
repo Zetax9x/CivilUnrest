@@ -1,0 +1,23 @@
+﻿[
+    {
+        "Path":  "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\docs\\screenshots\\characters\\standard.png",
+        "Width":  1152,
+        "Height":  648,
+        "Bytes":  339956,
+        "SHA256":  "7BF8325BB3A2B8CF7DE473555C1E2D3C68750DA4DA82DA31184CA6609E4AD3DA"
+    },
+    {
+        "Path":  "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\docs\\screenshots\\characters\\closeup.png",
+        "Width":  1152,
+        "Height":  648,
+        "Bytes":  796114,
+        "SHA256":  "235D0CFA957DA8A0C767ABF200E8CF50EE6149C66ED134677AC6068067DDE964"
+    },
+    {
+        "Path":  "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\docs\\screenshots\\characters\\animation_next.png",
+        "Width":  1152,
+        "Height":  648,
+        "Bytes":  797372,
+        "SHA256":  "A46AC6B79B102B6FC720475FF10EBBFB8B617CBD19841AEB0A4BB98B24BEA8F3"
+    }
+]
