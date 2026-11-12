@@ -1,0 +1,13 @@
+[gd_resource type="ShaderMaterial" format=3 uid="uid://djn8f4gkeyx58"]
+
+[ext_resource type="Shader" path="res://assets/art_direction/materials/urban_surface.gdshader" id="1_bft5m"]
+
+[resource]
+render_priority = 0
+shader = ExtResource("1_bft5m")
+shader_parameter/base_color = Color(0.7254902, 0.6156863, 0.5254902, 1)
+shader_parameter/roughness_value = 0.88
+shader_parameter/metallic_value = 0.0
+shader_parameter/variation = 0.07
+shader_parameter/grain_scale = 50.0
+shader_parameter/weathering = 0.0
