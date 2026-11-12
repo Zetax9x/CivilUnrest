@@ -1,0 +1,57 @@
+{
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "run_id": "a2f9dc64",
+  "viewport": [
+    1152,
+    648
+  ],
+  "live": {
+    "movingBeforePause": true,
+    "pausedTick": 818,
+    "pausedTickAfterWait": 818,
+    "pausedPositionsIdentical": true,
+    "pausedRenderContinues": true,
+    "resumedTick": 849,
+    "resumedMovement": true,
+    "pauseToggles": 2
+  },
+  "runtimeLog": {
+    "run_id": "a2f9dc64",
+    "running": true,
+    "exit_code": null,
+    "errors": 0,
+    "warnings": 0,
+    "lines": [
+      "0 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "1 OpenGL API 3.3.0 - Build 30.0.100.9805 - Compatibility - Using Device: Intel - Intel(R) UHD Graphics",
+      "2 ",
+      "3 MCP_TEST_READY agents=20 simulation_hz=30 seed=deterministic",
+      "4 MCP_TEST_PAUSE paused=true ticks=818",
+      "5 MCP_TEST_PAUSE paused=false ticks=818"
+    ],
+    "next": 6,
+    "more": false,
+    "dropped": 0
+  },
+  "shutdown": {
+    "stopped": true,
+    "running": false,
+    "editorPlaying": false,
+    "unsavedScenes": []
+  },
+  "headlessChecks": {
+    "ticks": 900,
+    "agentCount": 20,
+    "checks": [
+      "determinism",
+      "movement",
+      "bounds",
+      "finite positions",
+      "separation",
+      "coincident pair"
+    ],
+    "exitCode": 0
+  },
+  "parseExitCode": 0,
+  "scope": "Operational MCP smoke test only; not a 1000-agent or exported release performance benchmark."
+}
