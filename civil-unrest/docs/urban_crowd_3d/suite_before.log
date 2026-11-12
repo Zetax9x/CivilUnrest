@@ -1,0 +1,14 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+OpenGL API 3.3.0 - Build 30.0.100.9805 - Compatibility - Using Device: Intel - Intel(R) UHD Graphics
+
+URBAN_RESULT count=20 scenario=dispersed fps=60.002 p95=17.296 sim_ms=0.114 render_ms=0.447 tick_hz=30.063 overlap=0 blocked=0
+URBAN_RESULT count=20 scenario=chokepoint fps=60.002 p95=17.261 sim_ms=0.146 render_ms=0.446 tick_hz=29.938 overlap=0 blocked=0
+URBAN_RESULT count=100 scenario=dispersed fps=60.002 p95=19.186 sim_ms=0.423 render_ms=1.925 tick_hz=30.064 overlap=0 blocked=0
+URBAN_RESULT count=100 scenario=chokepoint fps=60.002 p95=19.417 sim_ms=0.599 render_ms=2.160 tick_hz=29.939 overlap=0 blocked=0
+URBAN_RESULT count=300 scenario=dispersed fps=60.002 p95=25.542 sim_ms=1.260 render_ms=5.918 tick_hz=30.063 overlap=0 blocked=0
+URBAN_RESULT count=300 scenario=chokepoint fps=60.002 p95=26.689 sim_ms=2.036 render_ms=6.004 tick_hz=29.939 overlap=0 blocked=0
+URBAN_RESULT count=600 scenario=dispersed fps=59.137 p95=35.136 sim_ms=2.898 render_ms=12.539 tick_hz=30.068 overlap=0 blocked=0
+URBAN_RESULT count=600 scenario=chokepoint fps=51.206 p95=39.639 sim_ms=5.630 render_ms=14.401 tick_hz=30.099 overlap=0 blocked=0
+URBAN_RESULT count=800 scenario=dispersed fps=43.685 p95=44.036 sim_ms=4.585 render_ms=18.171 tick_hz=29.956 overlap=0 blocked=0
+URBAN_RESULT count=800 scenario=chokepoint fps=35.953 p95=50.586 sim_ms=7.582 render_ms=19.791 tick_hz=30.086 overlap=0 blocked=0
+URBAN_SUITE_DONE renderer_before

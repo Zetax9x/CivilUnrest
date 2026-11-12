@@ -1,5 +1,14 @@
 # Progressi CivilUnrest
 
+## Ottimizzazione del renderer 3D dei personaggi — 2026-11-12
+
+- Profilo per fase prima delle modifiche (`tests/presentation/character_render_profile.gd`, 800 congestionati): preparazione `root * bone * local` 10,95 ms/frame e pose ricampionate tutte nello stesso frame (p95 26,4 ms nella suite) erano i costi principali; `set_instance_transform` solo 1,95 ms; GPU viewport 9,48 ms (3,88 senza personaggi).
+- Solo `scripts/characters/character_renderer.gd` riscritto nel percorso per frame, API invariate: pose scaglionate per LOD, keyframe condiviso al LOD 2 e al LOD 1 fuori dalle transizioni, aggiornamento completo solo a tick di posa o deviazione dell'orientamento oltre 0,05/0,15 rad (sub-pixel), altrimenti solo origini; buffer persistenti con un `multimesh_set_buffer` per batch; niente Dictionary/array per frame; rimossi solo dettagli polizia completamente chiusi nel gilet (LOD 0). Core 2D, scene, asset, `project.godot` invariati.
+- Suite debug, stesso protocollo (seed 20261112, 1152×648, MSAA 4×, LOD 2, 4+8 s, una ripetizione), prima → dopo. Congestionati: **600: 51,21 → 60,00 FPS, p95 39,64 → 23,80 ms, p99 49,76 → 25,48; 800: 35,95 → 59,26 FPS, p95 50,59 → 26,52, p99 57,96 → 29,42; CPU renderer 19,79 → 8,17 ms/frame**. 100/300 restano a 60 con p95 17,76/20,09. Memoria statica −5/−6 MiB a 600/800. Zero bloccati/sovrapposizioni oltre soglia. LOD 1 a 600: 24,47 → 43,61 FPS; LOD 0 a 600: 19,30 → 23,99 FPS.
+- **60 FPS stabili non confermati**: p95 sempre sopra 16,67 ms. Nessuna build release. CPU sim per tick a 800 più alta nella run "dopo" (7,58 → 9,21 ms) e GPU viewport (7,79 → 9,20 ms) con core invariato: causa non isolata, una sola ripetizione.
+- Test: nuovo `character_renderer_checks.gd` 42.629 controlli PASS; personaggi 6.314, integrazione 4.816, core 2D otto casi: PASS. MCP: 600 LOD 2, pausa (tick fermo) e ripresa, LOD 0/1/2, rotazione 45° → 135°, CharacterShowcase; zero errori/warning, screenshot salvati.
+- Dettagli, tabelle complete e limiti: [URBAN_CROWD_3D.md](URBAN_CROWD_3D.md#ottimizzazione-del-renderer-dei-personaggi--2026-11-12). Prossimo passo proposto: ripetere 3 volte i casi 600/800 per la varianza, misurare una build release, valutare culling per visibilità ai LOD 0/1 e il costo dell'adattatore (2,3 ms a 800).
+
 ## Integrazione folla animata 3D e benchmark urbano — 2026-11-12
 
 - Nuova scena indipendente `scenes/benchmarks/UrbanCrowd3D.tscn`: core 2D a 30 Hz, adattatore e renderer animato esistenti, tre archetipi, varianti, LOD dinamici e camera isometrica. Ambiente urbano modulare riutilizzato; ostacoli visivi derivati dalla geometria del core. Nessun gameplay né duplicazione della simulazione.

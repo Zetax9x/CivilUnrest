@@ -1,0 +1,134 @@
+{
+	"build": "debug standalone",
+	"count": 800,
+	"engine": "4.7.2-stable (official)",
+	"gpu_name": "Intel(R) UHD Graphics",
+	"level": 2,
+	"parts": [
+		1066,
+		4533,
+		6400
+	],
+	"phase_frames": 240,
+	"phase_ms": {
+		"adapter": {
+			"max": 5.905,
+			"mean": 2.4875875,
+			"median": 2.524,
+			"min": 1.554,
+			"p95": 3.614,
+			"p99": 5.036,
+			"samples": 240
+		},
+		"compose_root_bone_local": {
+			"max": 21.575,
+			"mean": 10.9513541666667,
+			"median": 10.829,
+			"min": 8.015,
+			"p95": 13.925,
+			"p99": 18.351,
+			"samples": 240
+		},
+		"hz_array_literal_per_agent": {
+			"max": 0.83,
+			"mean": 0.2210125,
+			"median": 0.216,
+			"min": 0.143,
+			"p95": 0.351,
+			"p99": 0.407,
+			"samples": 240
+		},
+		"multimesh_set_buffer": {
+			"max": 2.613,
+			"mean": 0.3928625,
+			"median": 0.361,
+			"min": 0.258,
+			"p95": 0.547,
+			"p99": 0.748,
+			"samples": 240
+		},
+		"pack_12_floats_per_part": {
+			"max": 18.287,
+			"mean": 10.0594791666667,
+			"median": 10.408,
+			"min": 4.79,
+			"p95": 13.309,
+			"p99": 14.67,
+			"samples": 240
+		},
+		"pack_origin_only_per_part": {
+			"max": 6.397,
+			"mean": 2.7425875,
+			"median": 2.9,
+			"min": 1.459,
+			"p95": 3.712,
+			"p99": 4.325,
+			"samples": 240
+		},
+		"pose_interpolated_all_agents": {
+			"max": 40.563,
+			"mean": 20.5723875,
+			"median": 20.633,
+			"min": 15.123,
+			"p95": 27.092,
+			"p99": 32.346,
+			"samples": 240
+		},
+		"pose_legacy_10hz_synchronized": {
+			"max": 41.954,
+			"mean": 21.2987791666667,
+			"median": 21.259,
+			"min": 15.416,
+			"p95": 29.261,
+			"p99": 35.127,
+			"samples": 240
+		},
+		"pose_nearest_lookup_all_agents": {
+			"max": 0.736,
+			"mean": 0.381704166666667,
+			"median": 0.381,
+			"min": 0.25,
+			"p95": 0.601,
+			"p99": 0.657,
+			"samples": 240
+		},
+		"upload_set_instance_transform": {
+			"max": 5.706,
+			"mean": 1.94475416666667,
+			"median": 1.89,
+			"min": 1.177,
+			"p95": 3.036,
+			"p99": 3.935,
+			"samples": 240
+		}
+	},
+	"renderer": "gl_compatibility",
+	"scenario": "chokepoint",
+	"viewport_render_cpu_ms": {
+		"max": 1.64800000190735,
+		"mean": 0.660248149103589,
+		"median": 0.629000008106232,
+		"min": 0.0,
+		"p95": 0.888999998569489,
+		"p99": 0.966000020503998,
+		"samples": 270
+	},
+	"viewport_render_gpu_characters_hidden_ms": {
+		"max": 8.38700008392334,
+		"mean": 3.87492900346158,
+		"median": 3.88700008392334,
+		"min": 2.64199995994568,
+		"p95": 5.2979998588562,
+		"p99": 8.37600040435791,
+		"samples": 169
+	},
+	"viewport_render_gpu_ms": {
+		"max": 14.5349998474121,
+		"mean": 9.48151482829341,
+		"median": 9.03899955749512,
+		"min": 0.0,
+		"p95": 12.6829996109009,
+		"p99": 14.3420000076294,
+		"samples": 270
+	}
+}

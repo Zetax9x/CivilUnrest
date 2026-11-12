@@ -99,4 +99,91 @@ Profilo MCP separato, 600 congestionati, 3,018 s: [dato grezzo](urban_crowd_3d/m
 
 Nessuna modifica a Main, ItalianStreet, MCP_Test, algoritmi/core 2D, benchmark 2D, project.godot, skills, istruzioni, addon o configurazioni. Unico modulo preesistente modificato: `crowd_session.gd`, per composizione dello scenario e osservabilità. Confronto dei 269 file sorgente/configurazione protetti: **268 invariati**, una modifica autorizzata alla sessione. [Baseline](urban_crowd_3d/preservation_before.json), [verifica finale](urban_crowd_3d/preservation.json).
 
-Nessun commit, asset esterno, dipendenza o gameplay. Prossimo intervento proposto: distribuire il ricampionamento delle pose e misurare un invio aggregato dei trasform, mantenendo invariato il core; poi ripetere la matrice e misurare una build release e i LOD ravvicinati.
+Nessun commit, asset esterno, dipendenza o gameplay. L'intervento allora proposto (pose distribuite, invio aggregato) è descritto nella sezione seguente.
+
+## Ottimizzazione del renderer dei personaggi — 2026-11-12
+
+Modificato soltanto `scripts/characters/character_renderer.gd`, con le stesse API pubbliche. Core 2D, adattatore, catalogo, pose, scene, asset e `project.godot` invariati: `git diff` vuoto su `scripts/simulation`, `scripts/presentation`, `scenes`, `project.godot`. In `urban_crowd_3d.gd`: tempo GPU del viewport, contatori opzionali del renderer e argomento `--camera-size=` per i LOD ravvicinati.
+
+### Profilo prima delle modifiche
+
+`tests/presentation/character_render_profile.gd` ricostruisce la pipeline originale dal catalogo e misura ogni fase sugli stessi dati: finestra grafica, 240 frame, LOD 2, congestionato. [800](urban_crowd_3d/render_profile_before_800.json), [300](urban_crowd_3d/render_profile_before_300.json). Medie a 800 (12.000 parti):
+
+| Fase | ms/frame |
+| --- | ---: |
+| Pose interpolate, tutti gli agenti (un ricampionamento completo) | 20,572 |
+| Pose: keyframe più vicino, tutti gli agenti | 0,382 |
+| Preparazione `root * bone * local` con binding Dictionary | 10,951 |
+| `set_instance_transform` per parte | 1,945 |
+| Scrittura di 12 float per parte in un buffer GDScript | 10,059 |
+| `multimesh_set_buffer`, tre chiamate | 0,393 |
+| Scrittura dei soli 3 float d'origine per parte | 2,743 |
+| Array letterale `[60,30,10][lod]` per agente (allocazione) | 0,221 |
+| GPU viewport con / senza personaggi | 9,482 / 3,875 |
+
+Conclusioni: il costo stava nella preparazione per frame di tutte le parti e nel ricampionamento concentrato nello stesso frame (orologi tutti a 1,0), non nella chiamata MultiMesh. Scrivere 12 float in GDScript costa più di `set_instance_transform`; il buffer conviene solo se quasi tutti i frame scrivono 3 float. Allocazione per frame individuata: l'array letterale per agente. Godot non espone un contatore di allocazioni; si riporta la memoria statica.
+
+### Modifiche applicate
+
+1. **Pose a frequenza per LOD, scaglionate**: 60/30/10 Hz invariati, fase iniziale distribuita per agente, niente picchi. LOD 2 sempre e LOD 1 fuori dalle transizioni: keyframe più vicino della banca condivisa (1/32 di ciclo), senza interpolazione per osso; LOD 2 mostra lo stato dominante durante i blend. LOD 0: interpolazione e blend originali.
+2. **Buffer persistenti**: un `PackedFloat32Array` per batch (16 float/istanza; colori scritti solo al rebuild), un `multimesh_set_buffer` per batch e frame. Binding piatti in array tipizzati: niente Dictionary né array letterali per frame.
+3. **Aggiornamenti ridondanti eliminati**: aggiornamento completo solo al tick di posa o se l'orientamento devia oltre la tolleranza (0 / 0,05 / 0,15 rad; errore laterale massimo calcolato 0,35 px al LOD 1 e 0,56 px al LOD 2, parte a 0,3 m dall'asse). Altrimenti si scrivono solo le origini, ogni frame, dalla posizione interpolata. Agenti fermi: nessuna scrittura. `bone * local` riutilizzato negli aggiornamenti di solo orientamento.
+4. **Parti nascoste**: rimosse solo le parti interamente contenute in una scatola opaca dello stesso osso: 5 dettagli della polizia sotto il gilet, solo LOD 0 (1.000 parti a 600 persone). LOD 1/2 invariati. Nessuna rimozione di parti visibili ai LOD lontani: piedi e arti fanno parte della silhouette e la GPU resta sotto budget al LOD 2.
+5. **Batching**: tre batch invariati; upload aggregato al posto di una chiamata per parte.
+6. **Interpolazione visiva**: posizione interpolata ogni frame, nessuna riduzione della frequenza di traslazione.
+
+Primo passaggio con tolleranza 0,03/0,05 rad: 800 congestionati a 51,14 FPS, con 589 aggiornamenti completi/frame causati dalla rotazione continua in congestione ([JSON](urban_crowd_3d/renderer_step1.json), [log](urban_crowd_3d/suite_step1.log)). Con 0,05/0,15 rad e cache `bone * local`: 173/frame.
+
+### Prima e dopo, matrice standard
+
+Protocollo della sezione principale: debug standalone, i3-1115G4/UHD, Compatibility, 1152×648, MSAA 4×, limite 60, VSync off, camera size 70, LOD 2, seed 20261112, 4 + 8 s, una ripetizione. Prima: [JSON](urban_crowd_3d/renderer_before.json), [log](urban_crowd_3d/suite_before.log). Dopo: [JSON](urban_crowd_3d/renderer_after.json), [log](urban_crowd_3d/suite_after.log). CPU renderer = adattatore + renderer per frame. GPU = `viewport_get_measured_render_time_gpu`, intero viewport. B/O = bloccati/sovrapposizioni oltre soglia, massimo fra lettura finale e campioni.
+
+| Persone | Scenario | FPS medi | p95 ms | p99 ms | CPU sim ms/tick | CPU renderer ms | GPU ms | Memoria MiB | B/O |
+| ---: | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| 100 | Disperso | 60,00 → 60,00 | 19,19 → 17,57 | 19,82 → 17,79 | 0,423 → 0,419 | 1,925 → **0,891** | 3,92 → 5,27 | 71,95 → 70,38 | 0/0 → 0/0 |
+| 100 | Congestionato | 60,00 → 60,00 | 19,42 → 17,76 | 20,30 → 18,11 | 0,599 → 0,551 | 2,160 → **0,838** | 5,19 → 5,65 | 72,02 → 70,45 | 0/0 → 0/0 |
+| 300 | Disperso | 60,00 → 60,00 | 25,54 → 18,91 | 28,76 → 19,80 | 1,260 → 1,400 | 5,918 → **2,644** | 6,70 → 8,14 | 76,04 → 72,99 | 0/0 → 0/0 |
+| 300 | Congestionato | 60,00 → 60,00 | 26,69 → 20,09 | 29,68 → 21,03 | 2,036 → 2,023 | 6,004 → **2,407** | 6,86 → 7,24 | 76,11 → 73,06 | 0/0 → 0/0 |
+| 600 | Disperso | 59,14 → **60,00** | 35,14 → 22,16 | 39,84 → 23,72 | 2,898 → 3,091 | 12,539 → **5,351** | 6,91 → 8,14 | 82,14 → 77,02 | 0/0 → 0/0 |
+| 600 | Congestionato | 51,21 → **60,00** | 39,64 → 23,80 | 49,76 → 25,48 | 5,630 → 5,093 | 14,401 → **5,055** | 5,86 → 8,24 | 82,20 → 77,09 | 0/0 → 0/0 |
+| 800 | Disperso | 43,69 → **60,00** | 44,04 → 23,90 | 47,70 → 25,12 | 4,585 → 5,190 | 18,171 → **7,638** | 6,86 → 9,54 | 86,67 → 80,27 | 0/0 → 0/0 |
+| 800 | Congestionato | 35,95 → **59,26** | 50,59 → 26,52 | 57,96 → 29,42 | 7,582 → 9,207 | 19,791 → **8,171** | 7,79 → 9,20 | 86,72 → 80,94 | 0/0 → 0/0 |
+
+800 congestionati, medie (p95): adattatore 1,898 → 2,343 (3,094); pose 6,908 (26,435) → **0,258 (0,388)**; preparazione 5,130 (6,676); upload 0,429 (0,817). Aggiornamenti completi 173/frame, traslazioni 618/frame. 30,07 tick/s, debito massimo 0,033 s; zero posizioni invalide e penetrazioni oltre soglia in tutti i casi.
+
+**60 FPS stabili non confermati**: tutti i p95 restano sopra 16,67 ms (17,57–26,52). Le medie 60,00 sono limitate dal tetto di 60 FPS.
+
+### LOD ravvicinati (solo congestionato)
+
+Stessa suite con `--camera-size=25` (LOD 0) e `40` (LOD 1). Prima = renderer originale ripristinato temporaneamente da `48221f9`, poi rimesso il nuovo (verificato con diff). JSON: `urban_crowd_3d/lod_<legacy|optimized>_size<size>_<persone>.json`.
+
+| Caso | FPS | p95 ms | CPU renderer ms | GPU ms |
+| --- | --- | --- | --- | --- |
+| LOD 0, 300 | 40,35 → 51,65 | 34,84 → 28,87 | 20,99 → 15,96 | 14,60 → 11,00 |
+| LOD 0, 600 | 19,30 → 23,99 | 68,29 → 51,84 | 39,92 → 32,56 | 25,70 → 22,28 |
+| LOD 1, 300 | 57,19 → **60,00** | 29,07 → 21,18 | 12,29 → 5,38 | 7,23 → 9,70 |
+| LOD 1, 600 | 24,47 → **43,61** | 51,33 → 35,28 | 32,16 → 17,58 | 13,65 → 9,76 |
+
+Le righe LOD 1 "dopo" usano la versione finale (keyframe al LOD 1, aggiunto dopo la matrice standard); il percorso LOD 2 non è cambiato in quel passo, quindi la matrice standard resta valida. A LOD 0 con 600 persone il limite è sia CPU (pose interpolate ~16,7 ms) sia GPU (~22 ms).
+
+### Verifiche
+
+| Verifica | Esito |
+| --- | --- |
+| Nuovo `tests/presentation/character_renderer_checks.gd` | **42.629 controlli**, PASS: buffer = composizione di riferimento `root * bone * local` ai tre LOD, deriva dell'orientamento entro tolleranza, pose scaglionate, conteggi parti/istanze/buffer, pausa senza scritture, colori. [Log](urban_crowd_3d/character_renderer_checks_after.log). |
+| Personaggi esistenti | 6.314 controlli PASS (Idle/Walk/Run/Turn/Stop, transizioni). [Log](urban_crowd_3d/character_checks_after.log). |
+| Integrazione | 4.816 controlli PASS, core identico per 960 tick, adattatore in sola lettura. [Log](urban_crowd_3d/urban_crowd_checks_after.log). |
+| Core 2D | Runner originale, otto casi 100–1.000: PASS. [Log](urban_crowd_3d/regression_2d_checks_after.log). |
+| MCP `60eda448` | 600 congestionati LOD 2; pausa: tick 825 fermo in due letture, 0 traslazioni; ripresa; zoom LOD 0 (16.120 parti) e LOD 1 (12.800); 100 persone LOD 0 con yaw 45° → 135°. Zero errori/warning. [600 LOD 2](urban_crowd_3d/after_congested_600.png), [LOD 0](urban_crowd_3d/after_lod0.png), [LOD 0 dettaglio](urban_crowd_3d/after_lod0_next.png), [LOD 1](urban_crowd_3d/after_lod1.png), [ruotata](urban_crowd_3d/after_rotated_100_lod0.png). |
+| MCP `c1386f8e` | LOD 1 finale, 300 persone: [vista](urban_crowd_3d/after_lod1_keyframe_300.png), [dettaglio](urban_crowd_3d/after_lod1_keyframe_crop.png). Zero errori/warning. |
+| MCP `ddaa8534` | CharacterShowcase, 240 frame, exit 0, zero errori. |
+
+Negli screenshot civili, manifestanti con zaino e polizia con casco e divisa scura restano distinguibili; nessuna parte staccata. Idle e Turn non compaiono spontaneamente nel benchmark (limite preesistente del core); coperti dal test dei personaggi e dal nuovo test (agenti fermi in rotazione). L'HUD nelle sessioni MCP mostra FPS più bassi della suite: debugger e catture attivi.
+
+### Costi residui e non verificato
+
+- A 800 congestionati il frame con tick somma core (9,2 ms) e renderer (8,2 ms): p95 26,5 ms. Restano preparazione (5,1 ms) e adattatore (2,3 ms, `visual.submit` per agente).
+- CPU sim per tick a 800 più alta nella run "dopo" (7,582 → 9,207 congestionato) con codice del core invariato e determinismo verificato. Causa non isolata; ipotesi: frequenza CPU e budget energetico condiviso con la GPU integrata a FPS più alti. Una sola ripetizione per caso.
+- GPU viewport più alta a LOD 2 (7,79 → 9,20 ms a 800 congestionati) con le stesse parti; causa non isolata (stessa ipotesi, o upload completo dei buffer). Sotto 16,67 ms.
+- Non misurati: build release, sessioni lunghe, picchi di memoria tra i campioni, numero di allocazioni, culling per visibilità ai LOD ravvicinati.
+- Cambi visivi accettati: al LOD 2 keyframe senza interpolazione né blend fra stati; al LOD 1 keyframe fuori dalle transizioni; orientamento con ritardo sub-pixel fino al tick di posa successivo.

@@ -30,11 +30,14 @@ var result_tag: String = "urban_3d"
 var quit_on_complete: bool = false
 var selected_counts: Array[int] = [20,100,300,600,800]
 var selected_scenarios: Array[String] = ["dispersed","chokepoint"]
+var camera_size_override: float = 0.0 # Optional fixed ortho size to benchmark LOD 0/1.
 
 func _ready() -> void:
 	Engine.max_fps = 60
 	DisplayServer.window_set_vsync_mode(DisplayServer.VSYNC_DISABLED)
 	get_viewport().msaa_3d = Viewport.MSAA_4X
+	# GPU timer queries for the whole viewport (environment + characters); same in every case.
+	RenderingServer.viewport_set_measure_render_time(get_viewport().get_viewport_rid(),true)
 	session.tick_completed.connect(_on_tick)
 	for argument in OS.get_cmdline_user_args():
 		if argument.begins_with("--count="):
@@ -43,6 +46,8 @@ func _ready() -> void:
 			selected_scenarios.assign([argument.get_slice("=",1)])
 		elif argument.begins_with("--tag="):
 			result_tag = argument.get_slice("=",1).validate_filename()
+		elif argument.begins_with("--camera-size="):
+			camera_size_override = float(argument.get_slice("=",1))
 		elif argument == "--quit-on-complete":
 			quit_on_complete = true
 	configure_case(agent_count,scenario_kind)
@@ -90,6 +95,14 @@ func _process(delta: float) -> void:
 		recorder.detail("adapter",adapter_usec)
 		recorder.detail("pose",characters.pose_usec)
 		recorder.detail("part_submission",characters.submission_usec - characters.pose_usec)
+		# Optional counters: absent in the pre-optimization renderer used for A/B runs.
+		var counters := {"prepare_usec":"transform_prepare","upload_usec":"multimesh_upload","full_updates":"full_updates_count","translated":"translated_count"}
+		for key: String in counters:
+			if key in characters:
+				var value: int = characters.get(key)
+				# *_count series store plain counts (recorded x1000 so the ms conversion yields the count).
+				recorder.detail(counters[key],value if key.ends_with("_usec") else value*1000)
+		recorder.detail("gpu_viewport",int(RenderingServer.viewport_get_measured_render_time_gpu(get_viewport().get_viewport_rid())*1000.0))
 	hud_elapsed += delta
 	if hud_elapsed >= .5:
 		hud_elapsed = 0.0
@@ -125,6 +138,8 @@ func run_suite() -> void:
 	suite_running = true; suite_finished = false
 	results.clear(); skipped.clear()
 	camera_rig.reset_view()
+	if camera_size_override > 0.0:
+		camera_rig.camera.size = camera_size_override
 	for count in selected_counts:
 		if count == 800:
 			var prior := results.filter(func(row: Dictionary) -> bool: return row.agent_count == 600)
