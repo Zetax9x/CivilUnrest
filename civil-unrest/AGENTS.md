@@ -1,5 +1,59 @@
 # AGENTS.md — Civil Unrest Simulator (Godot 4.7.2)
 
+## CivilUnrest — Regole operative condivise
+
+Queste regole definiscono il workflow del progetto per Codex e Claude Code.
+
+### Autonomia e delega
+
+- Un solo agente principale modifica il progetto per volta.
+- Non avviare subagenti o attività parallele per operazioni semplici.
+- Utilizza subagenti soltanto quando esiste un vantaggio concreto e i compiti sono chiaramente separabili.
+- Non permettere a più agenti di modificare contemporaneamente le stesse scene, risorse o script.
+
+### Verifica proporzionata
+
+- Dopo le modifiche al codice, esegui i controlli pertinenti.
+- Per modifiche alla simulazione, esegui i test automatici interessati.
+- Per modifiche al rendering, esegui controlli visivi e di prestazioni.
+- Non eseguire intere suite di test quando non sono pertinenti.
+- Non avviare review complete o audit di sicurezza per ogni modifica minore.
+- Esegui controlli di sicurezza mirati quando vengono modificati componenti che gestiscono file, rete, processi esterni o dati sensibili.
+
+### Test e copertura
+
+- Preferisci test automatici per logiche deterministiche.
+- Non imporre una copertura minima globale dell'80%.
+- Utilizza TDD quando risulta concretamente utile.
+- Le modifiche ai sistemi critici devono essere accompagnate da test di regressione.
+- I benchmark devono essere riproducibili e documentati.
+
+### Prestazioni
+
+- Il progetto deve puntare a supportare 1.000 agenti simultanei.
+- Mantieni separati simulazione e rendering.
+- Evita un nodo complesso per ogni agente quando non necessario.
+- Misura le prestazioni prima e dopo modifiche significative.
+- Non dichiarare raggiunti i 60 FPS senza benchmark reali.
+
+### Uso di MCP e documentazione
+
+- Utilizza Godot MCP per operazioni sull'editor, scene, esecuzione, diagnostica e test.
+- Utilizza Context7 quando è necessaria documentazione aggiornata di librerie esterne.
+- Privilegia la documentazione compatibile con la versione di Godot effettivamente installata.
+- Non inventare API, metodi o strumenti MCP.
+
+### Git
+
+- Crea commit dopo milestone stabili.
+- Non eseguire push senza autorizzazione.
+- Non eliminare modifiche preesistenti dell'utente.
+- Non includere segreti o credenziali nei commit.
+
+### Conflitti di istruzioni
+
+Quando un workflow generale suggerisce procedure più onerose del necessario, preferisci il workflow proporzionato definito per CivilUnrest, purché compatibile con le istruzioni di priorità superiore e con i requisiti di sicurezza.
+
 ## Role and objective
 You are the lead engineer and autonomous test agent for an ORIGINAL real-time 2D civil-unrest crowd-simulation/strategy game for Windows, built in Godot 4.7.2 Standard using typed GDScript. The visual direction is detailed modern 2D with an overhead tactical camera. The goal is a credible simulation of up to 1,000 visible agents, with a *measured* target of 60 FPS on an explicitly identified reference PC. A target is not evidence of achieved performance.
 
