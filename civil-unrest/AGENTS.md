@@ -13,7 +13,12 @@ Queste regole definiscono il workflow del progetto per Codex e Claude Code.
 
 ### Verifica proporzionata
 
-- Dopo le modifiche al codice, esegui i controlli pertinenti.
+- Modifiche puramente documentali: verifica contenuti, riferimenti e formati; non sono richiesti parsing del progetto, test runtime o avvio del gioco.
+- Modifiche semplici al codice: esegui parsing e test automatici pertinenti al codice modificato; avvia il gioco solo se il comportamento interessato richiede una verifica runtime.
+- Modifiche alle scene: verifica struttura, risorse e caricamento della scena interessata; eseguila quando necessario per verificarne il comportamento o l'aspetto.
+- Modifiche al gameplay: esegui test runtime dei comportamenti interessati e controlla i log.
+- Modifiche prestazionali: esegui un benchmark mirato e riproducibile, confrontando prima e dopo a condizioni equivalenti.
+- Milestone complete: esegui i test di integrazione appropriati ai sistemi coinvolti, oltre ai controlli pertinenti sopra indicati.
 - Per modifiche alla simulazione, esegui i test automatici interessati.
 - Per modifiche al rendering, esegui controlli visivi e di prestazioni.
 - Non eseguire intere suite di test quando non sono pertinenti.
@@ -33,8 +38,15 @@ Queste regole definiscono il workflow del progetto per Codex e Claude Code.
 - Il progetto deve puntare a supportare 1.000 agenti simultanei.
 - Mantieni separati simulazione e rendering.
 - Evita un nodo complesso per ogni agente quando non necessario.
-- Misura le prestazioni prima e dopo modifiche significative.
+- Misura le prestazioni prima e dopo modifiche significative alla simulazione o al rendering con possibile impatto prestazionale.
 - Non dichiarare raggiunti i 60 FPS senza benchmark reali.
+
+### Immutabilità e stato della simulazione
+
+- Configurazioni e dati condivisi sono preferibilmente immutabili, per evitare effetti collaterali tra sistemi.
+- Lo stato interno della simulazione è esplicitamente modificabile dai sistemi responsabili, con proprietà dei dati e punti di aggiornamento definiti. Questa distinzione specifica per CivilUnrest la regola generale ECC sull'immutabilità; non impone copie a ogni aggiornamento.
+- Riutilizza array, buffer e strutture dati della simulazione per evitare allocazioni inutili, mantenendo invarianti e ciclo di vita espliciti.
+- Controlla gli accessi allo stato: rendering e UI usano interfacce o snapshot coerenti; non sono consentite modifiche concorrenti non sincronizzate. Eventuali aggiornamenti paralleli richiedono sincronizzazione o partizionamento dei dati senza scritture in conflitto.
 
 ### Uso di MCP e documentazione
 
@@ -63,13 +75,13 @@ The project may draw inspiration from genre mechanics, but MUST NOT copy RIOT: C
 - The Godot project root is the folder containing `project.godot`.
 - Before modifying anything, inspect the repository, `project.godot`, existing scenes/scripts, Git status, test results, and current project documentation. Preserve working systems and do not replace existing content without a reason.
 - Use the connected `godot` MCP server to call `godot_status` first. Check editor/addon/runtime connectivity and the exact Godot API documentation for installed engine version. Prefer Godot MCP for scene inspection, editing, play mode, screenshots, profiling, and debugging when available.
-- Use local CLI/headless checks in addition to MCP. Never claim a live visual test occurred if only a headless import/parse check ran.
+- Use local CLI/headless checks in addition to MCP when required by the shared "Verifica proporzionata" policy above. Never claim a live visual test occurred if only a headless import/parse check ran.
 - If connection is unavailable, diagnose it, explain the limitation, and continue with only the checks actually possible; do not fabricate output.
 
 ## Execution discipline
 1. Work in small, testable milestones. Before each milestone, specify acceptance criteria and the expected files to change.
 2. Inspect existing APIs/documentation before using unfamiliar Godot 4.7.2 methods. Do not invent nodes, methods, properties, plugin tool names, or command arguments.
-3. Implement the smallest coherent change, run parser/import and automated tests, run the scene/game, inspect logs, and acquire screenshots when appropriate.
+3. Implement the smallest coherent change and apply the shared "Verifica proporzionata" policy above. Acquire screenshots when visual verification is relevant; do not require game execution for documentation-only changes.
 4. For a defect: reproduce -> isolate root cause -> fix -> regression test -> report. Never hide a failure by disabling assertions or silently reducing the number of agents.
 5. After a passing milestone, make a descriptive Git commit if Git is initialized and the working tree is under this project's control. Never reset, clean, force-push, rewrite history, or delete unrelated files automatically.
 6. Update `docs/PROGRESS.md` with change summary, tests run, measured results, known issues, and next tasks. If absent, create it. Keep documentation concise and truthful.
@@ -136,6 +148,8 @@ The project may draw inspiration from genre mechanics, but MUST NOT copy RIOT: C
 
 ## Response format after each milestone
 Report in Italian: (1) functionality implemented; (2) files touched; (3) commands/tests actually executed and results; (4) measured performance if relevant; (5) remaining blockers; (6) next concrete step. Distinguish measured facts from assumptions and estimates.
+
+Le istruzioni di verifica nel blocco gestito seguente si applicano ai controlli runtime richiesti dalla sezione "Verifica proporzionata"; non estendono l'obbligo di avvio del gioco agli altri casi. Preserva il blocco gestito e verifica i parametri effettivamente esposti dai tool prima di usarli.
 
 <!-- BEGIN:godot-mcp -->
 ## Godot (managed by godot-mcp; edit outside these markers)
