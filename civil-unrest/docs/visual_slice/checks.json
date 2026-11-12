@@ -1,0 +1,55 @@
+{
+	"checks": 49,
+	"failures": [],
+	"passed": true,
+	"populations": [
+		{
+			"count": 50,
+			"deterministic": true,
+			"diagnostics": {
+				"blocked_agents": 0,
+				"candidate_checks": 1,
+				"contacts": 0,
+				"count": 50,
+				"crossings": 13,
+				"gate_population": 11,
+				"invalid_positions": 0,
+				"max_penetration": 0.0,
+				"mean_penetration": 0.0,
+				"overlap_pairs": 0,
+				"pair_buffer_growths": 0,
+				"repeated_crossings": 0,
+				"solver_passes": 1,
+				"ticks": 120,
+				"unique_crossings": 13,
+				"unique_crossings_east": 6,
+				"unique_crossings_west": 7
+			},
+			"ticks": 120
+		},
+		{
+			"count": 100,
+			"deterministic": true,
+			"diagnostics": {
+				"blocked_agents": 0,
+				"candidate_checks": 34,
+				"contacts": 0,
+				"count": 100,
+				"crossings": 33,
+				"gate_population": 33,
+				"invalid_positions": 0,
+				"max_penetration": 0.0,
+				"mean_penetration": 0.0,
+				"overlap_pairs": 0,
+				"pair_buffer_growths": 0,
+				"repeated_crossings": 0,
+				"solver_passes": 1,
+				"ticks": 120,
+				"unique_crossings": 33,
+				"unique_crossings_east": 15,
+				"unique_crossings_west": 18
+			},
+			"ticks": 120
+		}
+	]
+}

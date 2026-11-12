@@ -1,0 +1,440 @@
+{
+  "date": "2026-11-12",
+  "engine": "4.7.2.stable.official.ed1daf0bf",
+  "build": "debug standalone, Godot MCP process",
+  "seed": 20261112,
+  "scenario": "dispersed",
+  "warmup_seconds": 4,
+  "requested_sample_seconds": 8,
+  "viewport": [
+    1152,
+    648
+  ],
+  "fps_limit": 60,
+  "vsync": "disabled",
+  "msaa_3d": "2x",
+  "camera": {
+    "orthographic_size": 74,
+    "yaw": 45,
+    "pitch": -45,
+    "position": [
+      -3,
+      0,
+      -9
+    ]
+  },
+  "cases": [
+    {
+      "before": {
+        "run_id": "9544cb62",
+        "child_count": 7,
+        "class": "Node3D",
+        "path": "WorldHost/UrbanSquare",
+        "properties": {
+          "get_slice_state()": {
+            "agent_count": 50,
+            "camera": {
+              "bounds": "Rect2(-28, -18, 56, 36)",
+              "pitch_degrees": -45,
+              "position": "Vector3(-3, 0, -9)",
+              "projection": 1,
+              "size": 74,
+              "yaw_degrees": 45
+            },
+            "debt_seconds": 0.0185986666666666,
+            "diagnostics": {
+              "blocked_agents": 0,
+              "candidate_checks": 1,
+              "contacts": 0,
+              "count": 50,
+              "crossings": 16,
+              "gate_population": 10,
+              "invalid_positions": 0,
+              "max_penetration": 0,
+              "mean_penetration": 0,
+              "overlap_pairs": 0,
+              "pair_buffer_growths": 0,
+              "repeated_crossings": 0,
+              "solver_passes": 1,
+              "ticks": 123,
+              "unique_crossings": 16,
+              "unique_crossings_east": 8,
+              "unique_crossings_west": 8
+            },
+            "first_position_2d": "Vector2(400.25528, 132.65666)",
+            "first_previous_2d": "Vector2(398.09097, 132.75754)",
+            "max_fps": 60,
+            "msaa_3d": 1,
+            "paused": false,
+            "rendering": {
+              "batches": 5,
+              "first_heading": -1.52422118186951,
+              "first_origin": "Vector3(-20.03507, 1.13, -15.864939)",
+              "instances": 50,
+              "submission_usec": 157
+            },
+            "seed": 20261112,
+            "simulation_tick_ms": 0.337,
+            "ticks": 125,
+            "viewport": "Vector2(1152, 648)",
+            "vsync_mode": 0
+          }
+        },
+        "script": "res://scripts/world/urban_slice.gd"
+      },
+      "perf": {
+        "run_id": "9544cb62",
+        "monitors": {
+          "audio": {
+            "output_latency_ms": 10
+          },
+          "engine": {
+            "display": "Windows",
+            "frames_drawn": 249,
+            "max_fps": 60,
+            "physics_ticks_per_second": 60,
+            "rendering_method": "gl_compatibility",
+            "time_scale": 1,
+            "vsync": "disabled"
+          },
+          "memory": {
+            "message_buffer_max_mib": 0,
+            "static_max_mib": 101.24,
+            "static_mib": 88.89
+          },
+          "objects": {
+            "nodes": 39,
+            "objects": 1636,
+            "orphan_nodes": 0,
+            "resources": 23
+          },
+          "pipeline_compilations": {
+            "canvas": 0,
+            "draw": 0,
+            "mesh": 0,
+            "specialization": 0,
+            "surface": 0
+          },
+          "render": {
+            "buffer_mem_mib": 14.37,
+            "draw_calls_in_frame": 47,
+            "objects_in_frame": 500,
+            "primitives_in_frame": 54954,
+            "texture_mem_mib": 18.32,
+            "video_mem_mib": 32.69
+          },
+          "time": {
+            "fps": 60,
+            "navigation_ms": 0.006,
+            "physics_ms": 0.062,
+            "process_ms": 2.181
+          }
+        },
+        "sample": {
+          "avg_fps": 60,
+          "delta": {
+            "nodes": 0,
+            "objects": 4,
+            "orphan_nodes": 0,
+            "static_memory_mib": 0.04
+          },
+          "draw_calls": {
+            "avg": 47,
+            "max": 47,
+            "median": 47,
+            "min": 47,
+            "p95": 47
+          },
+          "frame_ms": {
+            "avg": 16.666,
+            "max": 17.096,
+            "median": 16.666,
+            "min": 16.235,
+            "p95": 16.718
+          },
+          "frames": 481,
+          "physics_ms": {
+            "avg": 0.05,
+            "max": 0.063,
+            "median": 0.053,
+            "min": 0.032,
+            "p95": 0.063
+          },
+          "process_ms": {
+            "avg": 2.48,
+            "max": 4.327,
+            "median": 2.222,
+            "min": 2.176,
+            "p95": 4.327
+          },
+          "seconds": 8.016,
+          "spike_count": 0,
+          "spike_threshold_ms": 33.332
+        }
+      },
+      "after": {
+        "run_id": "9544cb62",
+        "child_count": 7,
+        "class": "Node3D",
+        "path": "WorldHost/UrbanSquare",
+        "properties": {
+          "get_slice_state()": {
+            "agent_count": 50,
+            "camera": {
+              "bounds": "Rect2(-28, -18, 56, 36)",
+              "pitch_degrees": -45,
+              "position": "Vector3(-3, 0, -9)",
+              "projection": 1,
+              "size": 74,
+              "yaw_degrees": 45
+            },
+            "debt_seconds": 0.0186283333333334,
+            "diagnostics": {
+              "blocked_agents": 0,
+              "candidate_checks": 0,
+              "contacts": 0,
+              "count": 50,
+              "crossings": 50,
+              "gate_population": 5,
+              "invalid_positions": 0,
+              "max_penetration": 0,
+              "mean_penetration": 0,
+              "overlap_pairs": 0,
+              "pair_buffer_growths": 0,
+              "repeated_crossings": 0,
+              "solver_passes": 1,
+              "ticks": 362,
+              "unique_crossings": 50,
+              "unique_crossings_east": 25,
+              "unique_crossings_west": 25
+            },
+            "first_position_2d": "Vector2(926.1818, 108.14383)",
+            "first_previous_2d": "Vector2(924.0175, 108.244705)",
+            "max_fps": 60,
+            "msaa_3d": 1,
+            "paused": false,
+            "rendering": {
+              "batches": 5,
+              "first_heading": -1.52422118186951,
+              "first_origin": "Vector3(6.2613525, 1.13, -17.090584)",
+              "instances": 50,
+              "submission_usec": 147
+            },
+            "seed": 20261112,
+            "simulation_tick_ms": 0.228,
+            "ticks": 368,
+            "viewport": "Vector2(1152, 648)",
+            "vsync_mode": 0
+          }
+        },
+        "script": "res://scripts/world/urban_slice.gd"
+      }
+    },
+    {
+      "before": {
+        "run_id": "19111864",
+        "child_count": 7,
+        "class": "Node3D",
+        "path": "WorldHost/UrbanSquare",
+        "properties": {
+          "get_slice_state()": {
+            "agent_count": 100,
+            "camera": {
+              "bounds": "Rect2(-28, -18, 56, 36)",
+              "pitch_degrees": -45,
+              "position": "Vector3(-3, 0, -9)",
+              "projection": 1,
+              "size": 74,
+              "yaw_degrees": 45
+            },
+            "debt_seconds": 0.0305903333333333,
+            "diagnostics": {
+              "blocked_agents": 0,
+              "candidate_checks": 32,
+              "contacts": 0,
+              "count": 100,
+              "crossings": 34,
+              "gate_population": 34,
+              "invalid_positions": 0,
+              "max_penetration": 0,
+              "mean_penetration": 0,
+              "overlap_pairs": 0,
+              "pair_buffer_growths": 0,
+              "repeated_crossings": 0,
+              "solver_passes": 1,
+              "ticks": 123,
+              "unique_crossings": 34,
+              "unique_crossings_east": 16,
+              "unique_crossings_west": 18
+            },
+            "first_position_2d": "Vector2(388.98233, 105.449165)",
+            "first_previous_2d": "Vector2(386.8162, 105.49748)",
+            "max_fps": 60,
+            "msaa_3d": 1,
+            "paused": false,
+            "rendering": {
+              "batches": 5,
+              "first_heading": -1.54849445819855,
+              "first_origin": "Vector3(-20.559797, 1.13, -17.227345)",
+              "instances": 100,
+              "submission_usec": 261
+            },
+            "seed": 20261112,
+            "simulation_tick_ms": 0.532,
+            "ticks": 125,
+            "viewport": "Vector2(1152, 648)",
+            "vsync_mode": 0
+          }
+        },
+        "script": "res://scripts/world/urban_slice.gd"
+      },
+      "perf": {
+        "run_id": "19111864",
+        "monitors": {
+          "audio": {
+            "output_latency_ms": 10
+          },
+          "engine": {
+            "display": "Windows",
+            "frames_drawn": 248,
+            "max_fps": 60,
+            "physics_ticks_per_second": 60,
+            "rendering_method": "gl_compatibility",
+            "time_scale": 1,
+            "vsync": "disabled"
+          },
+          "memory": {
+            "message_buffer_max_mib": 0,
+            "static_max_mib": 101.24,
+            "static_mib": 88.9
+          },
+          "objects": {
+            "nodes": 39,
+            "objects": 1636,
+            "orphan_nodes": 0,
+            "resources": 23
+          },
+          "pipeline_compilations": {
+            "canvas": 0,
+            "draw": 0,
+            "mesh": 0,
+            "specialization": 0,
+            "surface": 0
+          },
+          "render": {
+            "buffer_mem_mib": 14.38,
+            "draw_calls_in_frame": 47,
+            "objects_in_frame": 503,
+            "primitives_in_frame": 74560,
+            "texture_mem_mib": 18.32,
+            "video_mem_mib": 32.7
+          },
+          "time": {
+            "fps": 60,
+            "navigation_ms": 0.005,
+            "physics_ms": 0.065,
+            "process_ms": 2.152
+          }
+        },
+        "sample": {
+          "avg_fps": 60,
+          "delta": {
+            "nodes": 0,
+            "objects": 4,
+            "orphan_nodes": 0,
+            "static_memory_mib": 0.04
+          },
+          "draw_calls": {
+            "avg": 47,
+            "max": 47,
+            "median": 47,
+            "min": 47,
+            "p95": 47
+          },
+          "frame_ms": {
+            "avg": 16.666,
+            "max": 16.902,
+            "median": 16.666,
+            "min": 16.435,
+            "p95": 16.697
+          },
+          "frames": 481,
+          "physics_ms": {
+            "avg": 0.045,
+            "max": 0.065,
+            "median": 0.035,
+            "min": 0.032,
+            "p95": 0.065
+          },
+          "process_ms": {
+            "avg": 2.93,
+            "max": 4.093,
+            "median": 2.746,
+            "min": 2.152,
+            "p95": 4.093
+          },
+          "seconds": 8.016,
+          "spike_count": 0,
+          "spike_threshold_ms": 33.332
+        }
+      },
+      "after": {
+        "run_id": "19111864",
+        "child_count": 7,
+        "class": "Node3D",
+        "path": "WorldHost/UrbanSquare",
+        "properties": {
+          "get_slice_state()": {
+            "agent_count": 100,
+            "camera": {
+              "bounds": "Rect2(-28, -18, 56, 36)",
+              "pitch_degrees": -45,
+              "position": "Vector3(-3, 0, -9)",
+              "projection": 1,
+              "size": 74,
+              "yaw_degrees": 45
+            },
+            "debt_seconds": 0.0302590000000002,
+            "diagnostics": {
+              "blocked_agents": 0,
+              "candidate_checks": 1,
+              "contacts": 0,
+              "count": 100,
+              "crossings": 100,
+              "gate_population": 19,
+              "invalid_positions": 0,
+              "max_penetration": 0,
+              "mean_penetration": 0,
+              "overlap_pairs": 0,
+              "pair_buffer_growths": 0,
+              "repeated_crossings": 0,
+              "solver_passes": 1,
+              "ticks": 363,
+              "unique_crossings": 100,
+              "unique_crossings_east": 50,
+              "unique_crossings_west": 50
+            },
+            "first_position_2d": "Vector2(906.9618, 89.06033)",
+            "first_previous_2d": "Vector2(904.79535, 89.091835)",
+            "max_fps": 60,
+            "msaa_3d": 1,
+            "paused": false,
+            "rendering": {
+              "batches": 5,
+              "first_heading": -1.55625653266907,
+              "first_origin": "Vector3(5.338098, 1.13, -18.046839)",
+              "instances": 100,
+              "submission_usec": 197
+            },
+            "seed": 20261112,
+            "simulation_tick_ms": 0.567,
+            "ticks": 368,
+            "viewport": "Vector2(1152, 648)",
+            "vsync_mode": 0
+          }
+        },
+        "script": "res://scripts/world/urban_slice.gd"
+      }
+    }
+  ]
+}

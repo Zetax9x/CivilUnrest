@@ -1,5 +1,17 @@
 # Progressi CivilUnrest
 
+## Prima vertical slice 3D isometrica — 2026-11-12
+
+- `Main.tscn` rimane l'ingresso del progetto e istanzia `scenes/urban/UrbanSquare.tscn` sotto `WorldHost`. Il precedente messaggio provvisorio è nascosto. Scene MCP e benchmark restano indipendenti.
+- Piazza originale con tre edifici, asfalto/marciapiedi, segnaletica, lampioni, alberi/panchine, tre auto civili e un mezzo della polizia; geometrie procedurali e materiali semplici, nessun asset scaricato.
+- Core 2D invariato: sessione a 30 Hz, adattatore X/Y → X/Z, renderer separato in cinque MultiMesh e telecamera indipendente. 50/100 segnaposto, senza fisica o aggiornamenti individuali. WASD, rotellina, Q/E a 90°, HOME, limiti configurabili; 1/2 cambia popolazione, SPAZIO mette in pausa.
+- Parsing/caricamento headless: exit 0. Test grafico `tests/presentation/vertical_slice_checks.gd`: 49 controlli superati, inclusa uguaglianza deterministica con il core per 120 tick a 50/100 persone. Verificati dal vivo avvio Main tramite MCP, screenshot, movimento, tutti i comandi camera, limiti e pausa/ripresa. Corretto il getter diagnostico della slice affinché pubblichi snapshot senza ricostruire la griglia durante le letture MCP.
+- Misure MCP debug, 1152×648, limite 60 FPS, VSync off, MSAA 2×, seed 20261112, warm-up 4 s + campione 8,016 s: **50 persone: 60 FPS medi, frame medio 16,666 ms, p95 16,718 ms; 100 persone: 60 FPS medi, frame medio 16,666 ms, p95 16,697 ms**. Una prova per popolazione; nessuna certificazione release/1.000 personaggi 3D.
+- Scene originali rieseguite separatamente: MCP, 20 agenti, pausa/ripresa funzionante; benchmark 2D, 1.000 agenti congestionati, tick 36 → 361, zero sovrapposizioni oltre soglia/posizioni invalide/bloccati nelle letture. Zero errori/warning nelle prove finali; non è stata ripetuta l'intera suite benchmark 2D.
+- SHA-256 invariati per 195 file protetti, inclusi algoritmi, test/benchmark, `project.godot`, AGENTS/CLAUDE, skills e addon. Nessun commit, plugin, dipendenza o modifica globale.
+- Limiti: personaggi senza animazione articolata, LOD e occlusione tattica ancora assenti; uso del dominio disperso esistente, nessuna nuova navigazione urbana. I trasform MultiMesh richiedono il test grafico: i tentativi headless con backend Dummy non li verificano.
+- Dettagli architetturali, comandi, screenshot, risultati originali e problemi risolti: [VISUAL_SLICE.md](VISUAL_SLICE.md). Prossimo passo: scenario urbano navigabile e gestione della leggibilità prima del gameplay.
+
 ## Separazione degli ingressi del progetto — 2026-11-12
 
 - **Scena principale:** `res://scenes/main/Main.tscn`, impostata in `application/run/main_scene`. Contiene soltanto `Main` (Node), `WorldHost` (Node vuoto) e `PlaceholderUI/Status` (messaggio provvisorio). Nessuno script, autoload, caricamento del test o del benchmark.

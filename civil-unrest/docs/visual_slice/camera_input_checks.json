@@ -1,0 +1,324 @@
+{
+  "controls": {
+    "directions": [
+      {
+        "key": "W",
+        "state": {
+          "agent_count": 100,
+          "camera": {
+            "bounds": "Rect2(-28, -18, 56, 36)",
+            "pitch_degrees": -45,
+            "position": "Vector3(-7.5251827, 0, -13.525181)",
+            "projection": 1,
+            "size": 74,
+            "yaw_degrees": 45
+          },
+          "debt_seconds": 0.0216870000000005,
+          "diagnostics": {
+            "blocked_agents": 0,
+            "candidate_checks": 8,
+            "contacts": 0,
+            "count": 100,
+            "crossings": 100,
+            "gate_population": 0,
+            "invalid_positions": 0,
+            "max_penetration": 0,
+            "mean_penetration": 0,
+            "overlap_pairs": 0,
+            "pair_buffer_growths": 0,
+            "repeated_crossings": 0,
+            "solver_passes": 1,
+            "ticks": 519,
+            "unique_crossings": 100,
+            "unique_crossings_east": 50,
+            "unique_crossings_west": 50
+          },
+          "first_position_2d": "Vector2(1238.4215, 84.2403)",
+          "first_previous_2d": "Vector2(1236.2551, 84.271805)",
+          "max_fps": 60,
+          "msaa_3d": 1,
+          "paused": false,
+          "rendering": {
+            "batches": 5,
+            "first_heading": -1.5562561750412,
+            "first_origin": "Vector3(21.883228, 1.13, -18.287436)",
+            "instances": 100,
+            "submission_usec": 193
+          },
+          "seed": 20261112,
+          "simulation_tick_ms": 0.695,
+          "ticks": 521,
+          "viewport": "Vector2(1152, 648)",
+          "vsync_mode": 0
+        }
+      },
+      {
+        "key": "A",
+        "state": {
+          "agent_count": 100,
+          "camera": {
+            "bounds": "Rect2(-28, -18, 56, 36)",
+            "pitch_degrees": -45,
+            "position": "Vector3(-7.5252957, 0, -4.4747043)",
+            "projection": 1,
+            "size": 74,
+            "yaw_degrees": 45
+          },
+          "debt_seconds": 0.0216740000000005,
+          "diagnostics": {
+            "blocked_agents": 0,
+            "candidate_checks": 5,
+            "contacts": 0,
+            "count": 100,
+            "crossings": 100,
+            "gate_population": 0,
+            "invalid_positions": 0,
+            "max_penetration": 0,
+            "mean_penetration": 0,
+            "overlap_pairs": 0,
+            "pair_buffer_growths": 0,
+            "repeated_crossings": 0,
+            "solver_passes": 1,
+            "ticks": 527,
+            "unique_crossings": 100,
+            "unique_crossings_east": 50,
+            "unique_crossings_west": 50
+          },
+          "first_position_2d": "Vector2(1262.2517, 83.89375)",
+          "first_previous_2d": "Vector2(1260.0853, 83.925255)",
+          "max_fps": 60,
+          "msaa_3d": 1,
+          "paused": false,
+          "rendering": {
+            "batches": 5,
+            "first_heading": -1.5562561750412,
+            "first_origin": "Vector3(23.074696, 1.13, -18.304762)",
+            "instances": 100,
+            "submission_usec": 244
+          },
+          "seed": 20261112,
+          "simulation_tick_ms": 0.482,
+          "ticks": 532,
+          "viewport": "Vector2(1152, 648)",
+          "vsync_mode": 0
+        }
+      },
+      {
+        "key": "S",
+        "state": {
+          "agent_count": 100,
+          "camera": {
+            "bounds": "Rect2(-28, -18, 56, 36)",
+            "pitch_degrees": -45,
+            "position": "Vector3(1.5253025, 0, -4.474699)",
+            "projection": 1,
+            "size": 74,
+            "yaw_degrees": 45
+          },
+          "debt_seconds": 0.00498800000000049,
+          "diagnostics": {
+            "blocked_agents": 0,
+            "candidate_checks": 5,
+            "contacts": 0,
+            "count": 100,
+            "crossings": 100,
+            "gate_population": 0,
+            "invalid_positions": 0,
+            "max_penetration": 0,
+            "mean_penetration": 0,
+            "overlap_pairs": 0,
+            "pair_buffer_growths": 0,
+            "repeated_crossings": 0,
+            "solver_passes": 1,
+            "ticks": 543,
+            "unique_crossings": 100,
+            "unique_crossings_east": 50,
+            "unique_crossings_west": 50
+          },
+          "first_position_2d": "Vector2(1288.2483, 83.51569)",
+          "first_previous_2d": "Vector2(1286.0819, 83.547195)",
+          "max_fps": 60,
+          "msaa_3d": 1,
+          "paused": false,
+          "rendering": {
+            "batches": 5,
+            "first_heading": -1.5562561750412,
+            "first_origin": "Vector3(24.320307, 1.13, -18.322876)",
+            "instances": 100,
+            "submission_usec": 290
+          },
+          "seed": 20261112,
+          "simulation_tick_ms": 0.706,
+          "ticks": 544,
+          "viewport": "Vector2(1152, 648)",
+          "vsync_mode": 0
+        }
+      },
+      {
+        "key": "D",
+        "state": {
+          "agent_count": 100,
+          "camera": {
+            "bounds": "Rect2(-28, -18, 56, 36)",
+            "pitch_degrees": -45,
+            "position": "Vector3(1.5252459, 0, -13.525245)",
+            "projection": 1,
+            "size": 74,
+            "yaw_degrees": 45
+          },
+          "debt_seconds": 0.0216406666666672,
+          "diagnostics": {
+            "blocked_agents": 0,
+            "candidate_checks": 8,
+            "contacts": 0,
+            "count": 100,
+            "crossings": 100,
+            "gate_population": 0,
+            "invalid_positions": 0,
+            "max_penetration": 0,
+            "mean_penetration": 0,
+            "overlap_pairs": 0,
+            "pair_buffer_growths": 0,
+            "repeated_crossings": 0,
+            "solver_passes": 1,
+            "ticks": 551,
+            "unique_crossings": 100,
+            "unique_crossings_east": 50,
+            "unique_crossings_west": 50
+          },
+          "first_position_2d": "Vector2(1312.0785, 83.169136)",
+          "first_previous_2d": "Vector2(1309.9121, 83.200645)",
+          "max_fps": 60,
+          "msaa_3d": 1,
+          "paused": false,
+          "rendering": {
+            "batches": 5,
+            "first_heading": -1.55625259876251,
+            "first_origin": "Vector3(25.565931, 1.13, -18.340992)",
+            "instances": 100,
+            "submission_usec": 174
+          },
+          "seed": 20261112,
+          "simulation_tick_ms": 0.566,
+          "ticks": 555,
+          "viewport": "Vector2(1152, 648)",
+          "vsync_mode": 0
+        }
+      }
+    ],
+    "near": {
+      "run_id": "5d24a7df",
+      "child_count": 7,
+      "class": "Node3D",
+      "path": "WorldHost/UrbanSquare",
+      "properties": {
+        "get_slice_state()": {
+          "agent_count": 100,
+          "camera": {
+            "bounds": "Rect2(-28, -18, 56, 36)",
+            "pitch_degrees": -45,
+            "position": "Vector3(-3, 0, -9)",
+            "projection": 1,
+            "size": 24,
+            "yaw_degrees": 45
+          },
+          "debt_seconds": 0.0216260000000005,
+          "diagnostics": {
+            "blocked_agents": 0,
+            "candidate_checks": 4,
+            "contacts": 0,
+            "count": 100,
+            "crossings": 100,
+            "gate_population": 0,
+            "invalid_positions": 0,
+            "max_penetration": 0,
+            "mean_penetration": 0,
+            "overlap_pairs": 0,
+            "pair_buffer_growths": 0,
+            "repeated_crossings": 0,
+            "solver_passes": 1,
+            "ticks": 567,
+            "unique_crossings": 100,
+            "unique_crossings_east": 50,
+            "unique_crossings_west": 50
+          },
+          "first_position_2d": "Vector2(1340.2415, 82.759575)",
+          "first_previous_2d": "Vector2(1338.0751, 82.791084)",
+          "max_fps": 60,
+          "msaa_3d": 1,
+          "paused": false,
+          "rendering": {
+            "batches": 5,
+            "first_heading": -1.55625259876251,
+            "first_origin": "Vector3(26.97403, 1.13, -18.36147)",
+            "instances": 100,
+            "submission_usec": 284
+          },
+          "seed": 20261112,
+          "simulation_tick_ms": 0.412,
+          "ticks": 568,
+          "viewport": "Vector2(1152, 648)",
+          "vsync_mode": 0
+        }
+      },
+      "script": "res://scripts/world/urban_slice.gd"
+    }
+  },
+  "far": {
+    "run_id": "5d24a7df",
+    "child_count": 7,
+    "class": "Node3D",
+    "path": "WorldHost/UrbanSquare",
+    "properties": {
+      "get_slice_state()": {
+        "agent_count": 100,
+        "camera": {
+          "bounds": "Rect2(-28, -18, 56, 36)",
+          "pitch_degrees": -45,
+          "position": "Vector3(28, 0, -18)",
+          "projection": 1,
+          "size": 100,
+          "yaw_degrees": 45
+        },
+        "debt_seconds": 0.0169906666666673,
+        "diagnostics": {
+          "blocked_agents": 0,
+          "candidate_checks": 1,
+          "contacts": 0,
+          "count": 100,
+          "crossings": 100,
+          "gate_population": 1,
+          "invalid_positions": 0,
+          "max_penetration": 0,
+          "mean_penetration": 0,
+          "overlap_pairs": 0,
+          "pair_buffer_growths": 0,
+          "repeated_crossings": 0,
+          "solver_passes": 1,
+          "ticks": 670,
+          "unique_crossings": 100,
+          "unique_crossings_east": 50,
+          "unique_crossings_west": 50
+        },
+        "first_position_2d": "Vector2(1448.5535, 80.25897)",
+        "first_previous_2d": "Vector2(1450.7201, 80.25938)",
+        "max_fps": 60,
+        "msaa_3d": 1,
+        "paused": false,
+        "rendering": {
+          "batches": 5,
+          "first_heading": 1.57060968875885,
+          "first_origin": "Vector3(32.480785, 1.13, -18.487043)",
+          "instances": 100,
+          "submission_usec": 285
+        },
+        "seed": 20261112,
+        "simulation_tick_ms": 0.471,
+        "ticks": 676,
+        "viewport": "Vector2(1152, 648)",
+        "vsync_mode": 0
+      }
+    },
+    "script": "res://scripts/world/urban_slice.gd"
+  }
+}

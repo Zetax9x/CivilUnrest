@@ -1,0 +1,88 @@
+[gd_scene format=3 uid="uid://b5gvwqaxm3wjj"]
+
+[ext_resource type="Script" uid="uid://d0gemsotkxgq8" path="res://scripts/world/urban_slice.gd" id="1_5ntx7"]
+[ext_resource type="Script" uid="uid://cdxjvph1owpxw" path="res://scripts/world/urban_environment.gd" id="2_jasng"]
+[ext_resource type="Script" uid="uid://ca7wxa1kparis" path="res://scripts/presentation/crowd_session.gd" id="3_d6b1x"]
+[ext_resource type="Script" uid="uid://q3mqw1opkp0d" path="res://scripts/rendering/crowd_renderer_3d.gd" id="4_rfvgr"]
+[ext_resource type="Script" uid="uid://diqah3htlllma" path="res://scripts/camera/isometric_camera.gd" id="5_el37e"]
+
+[sub_resource type="Environment" id="Environment_5ntx7"]
+background_mode = 1
+background_color = Color(0.5058824, 0.5803922, 0.59607846, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.7607843, 0.8039216, 0.8156863, 1)
+ambient_light_energy = 0.65
+
+[node name="UrbanSquare" type="Node3D" unique_id=1424280603]
+script = ExtResource("1_5ntx7")
+
+[node name="EnvironmentGeometry" type="Node3D" parent="." unique_id=951969109]
+script = ExtResource("2_jasng")
+
+[node name="CrowdSession" type="Node" parent="." unique_id=1840146131]
+script = ExtResource("3_d6b1x")
+
+[node name="CrowdRenderer" type="Node3D" parent="." unique_id=288389524]
+script = ExtResource("4_rfvgr")
+
+[node name="CameraRig" type="Node3D" parent="." unique_id=485140159]
+script = ExtResource("5_el37e")
+initial_zoom = 74.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=1226779620]
+
+[node name="Sun" type="DirectionalLight3D" parent="." unique_id=532058073]
+transform = Transform3D(0.8660254, 0.39400536, -0.30783075, 0, 0.6156615, 0.7880107, 0.5, -0.6824373, 0.5331785, 0, 0, 0)
+light_color = Color(1, 0.88235295, 0.7137255, 1)
+shadow_enabled = true
+directional_shadow_mode = 0
+directional_shadow_max_distance = 180.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=641003610]
+environment = SubResource("Environment_5ntx7")
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=756244719]
+
+[node name="Title" type="Label" parent="HUD" unique_id=916858573]
+offset_left = 24.0
+offset_top = 18.0
+offset_right = 650.0
+offset_bottom = 78.0
+theme_override_colors/font_color = Color(0.94509804, 0.91764706, 0.85882354, 1)
+theme_override_colors/font_shadow_color = Color(0.09411765, 0.13725491, 0.16470589, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 22
+text = "PIAZZA DEL TIGLIO
+CivilUnrest / studio urbano 01"
+
+[node name="Status" type="Label" parent="HUD" unique_id=803809892]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -340.0
+offset_top = 20.0
+offset_right = -20.0
+offset_bottom = 80.0
+theme_override_colors/font_color = Color(0.94509804, 0.91764706, 0.85882354, 1)
+theme_override_colors/font_shadow_color = Color(0.09411765, 0.13725491, 0.16470589, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 18
+horizontal_alignment = 2
+
+[node name="Controls" type="Label" parent="HUD" unique_id=874446251]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 24.0
+offset_top = -70.0
+offset_right = 1100.0
+offset_bottom = -16.0
+theme_override_colors/font_color = Color(0.94509804, 0.91764706, 0.85882354, 1)
+theme_override_colors/font_shadow_color = Color(0.09411765, 0.13725491, 0.16470589, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_font_sizes/font_size = 16
+text = "WASD  sposta     ROTELLA  zoom     Q / E  ruota 90°     HOME  ripristina
+1  50 persone     2  100 persone     SPAZIO  pausa"

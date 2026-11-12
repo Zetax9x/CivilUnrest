@@ -1,12 +1,17 @@
 [gd_scene format=3 uid="uid://7qrebf6pbhpk"]
 
+[ext_resource type="PackedScene" uid="uid://b5gvwqaxm3wjj" path="res://scenes/urban/UrbanSquare.tscn" id="1_u1xfj"]
+
 [node name="Main" type="Node" unique_id=221736156]
 
 [node name="WorldHost" type="Node" parent="." unique_id=420764471]
 
+[node name="UrbanSquare" parent="WorldHost" unique_id=1424280603 instance=ExtResource("1_u1xfj")]
+
 [node name="PlaceholderUI" type="CanvasLayer" parent="." unique_id=2062545626]
 
 [node name="Status" type="Label" parent="PlaceholderUI" unique_id=806934013]
+visible = false
 offset_left = 24.0
 offset_top = 24.0
 offset_right = 900.0
