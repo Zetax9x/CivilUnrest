@@ -1,0 +1,15 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+
+# Configurazioni MCP locali
+/.mcp.json
+/.codex/config.toml
+
+# Credenziali e configurazioni riservate
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
