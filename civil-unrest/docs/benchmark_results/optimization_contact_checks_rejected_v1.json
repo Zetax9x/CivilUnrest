@@ -1,0 +1,67 @@
+{
+	"failures": [
+		"narrow_passage max penetration 3.1648 exceeds 1 unit"
+	],
+	"overlap_threshold": 0.1,
+	"radius": 5.0,
+	"results": [
+		{
+			"count": 100,
+			"crossings": 50,
+			"max_cpu_ms": 5.046,
+			"max_penetration": 0.0,
+			"mean_cpu_ms": 0.8551875,
+			"mean_penetration_over_overlapping_pairs": 0.0,
+			"oracle_pairs_checked": 1188000,
+			"overlap_pair_tick_samples": 0,
+			"peak_blocked_agents": 0,
+			"peak_contacts": 30,
+			"scenario": "high_density",
+			"swept_min_distance": null
+		},
+		{
+			"count": 1000,
+			"crossings": 308,
+			"max_cpu_ms": 140.711,
+			"max_penetration": 3.16476726531982,
+			"mean_cpu_ms": 32.4684125,
+			"mean_penetration_over_overlapping_pairs": 0.390175333909126,
+			"oracle_pairs_checked": 0,
+			"overlap_pair_tick_samples": 81800,
+			"peak_blocked_agents": 0,
+			"peak_contacts": 1363,
+			"scenario": "narrow_passage",
+			"swept_min_distance": null
+		},
+		{
+			"count": 100,
+			"crossings": 60,
+			"max_cpu_ms": 34.779,
+			"max_penetration": 0.0,
+			"mean_cpu_ms": 0.839408333333333,
+			"mean_penetration_over_overlapping_pairs": 0.0,
+			"oracle_pairs_checked": 1188000,
+			"overlap_pair_tick_samples": 0,
+			"peak_blocked_agents": 0,
+			"peak_contacts": 21,
+			"scenario": "opposing_flows",
+			"swept_min_distance": 9.69176864624023
+		},
+		{
+			"count": 100,
+			"crossings": 100,
+			"max_cpu_ms": 3.069,
+			"max_penetration": 0.450601577758789,
+			"mean_cpu_ms": 0.878995833333333,
+			"mean_penetration_over_overlapping_pairs": 0.181908192173127,
+			"oracle_pairs_checked": 1188000,
+			"overlap_pair_tick_samples": 62,
+			"peak_blocked_agents": 10,
+			"peak_contacts": 50,
+			"scenario": "temporary_block",
+			"swept_min_distance": null
+		}
+	],
+	"seed": 20261112,
+	"ticks": 240
+}

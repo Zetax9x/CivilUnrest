@@ -1,0 +1,8 @@
+﻿{
+    "Utc":  "2026-11-12T12:48:36.5170869Z",
+    "ProcessId":  11168,
+    "WorkingSetMiB":  251.4609375,
+    "PrivateMiB":  185.12109375,
+    "CPUSeconds":  13.46875,
+    "CommandLine":  "\"C:\\Tools\\Godot\\Godot_v4.7.2-stable_win64.exe\" --path . --max-fps 60 --scene res://scenes/benchmarks/CrowdBenchmark.tscn -- --suite --count=1000 --scenario=chokepoint --duration=30 --warmup=4 --tag=soak_1000 --quit-on-complete"
+}

@@ -1,0 +1,23 @@
+{
+  "run_id": "a1723f03",
+  "scene": "res://scenes/benchmarks/CrowdBenchmark.tscn",
+  "editor_connected": true,
+  "errors": 0,
+  "warnings": 0,
+  "paused_for_screenshot": true,
+  "stopped": true,
+  "screenshot": "optimization_chokepoint.png",
+  "snapshot": {
+    "ticks": 449,
+    "count": 1000,
+    "crossings": 27,
+    "blocked_agents": 686,
+    "contacts": 1104,
+    "overlap_pairs": 0,
+    "max_penetration": 0,
+    "invalid_positions": 0,
+    "pair_buffer_growths": 0,
+    "solver_passes": 1
+  },
+  "profiler_note": "Script accumulated times invalid: _travel_fraction total 14131 ms exceeds 2006 ms capture. Do not use for CPU comparisons; internal wall-clock spans are authoritative."
+}

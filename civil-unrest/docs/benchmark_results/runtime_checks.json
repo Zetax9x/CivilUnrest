@@ -1,0 +1,214 @@
+{
+  "runtime": {
+    "run_id": "3cfb7324",
+    "running": true,
+    "exit_code": null,
+    "errors": 0,
+    "warnings": 0,
+    "lines": [
+      "0 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "1 OpenGL API 3.3.0 - Build 30.0.100.9805 - Compatibility - Using Device: Intel - Intel(R) UHD Graphics",
+      "2 ",
+      "3 CROWD_READY count=1000 scenario=chokepoint renderer=draw",
+      "4 CROWD_RESULT count=100 scenario=dispersed fps=83.63 sim_ms=1.119 p95_frame=18.170",
+      "5 CROWD_RESULT count=300 scenario=dispersed fps=60.62 sim_ms=2.309 p95_frame=19.815",
+      "6 CROWD_RESULT count=500 scenario=dispersed fps=60.02 sim_ms=3.959 p95_frame=21.898",
+      "7 CROWD_RESULT count=1000 scenario=dispersed fps=69.03 sim_ms=10.713 p95_frame=28.865",
+      "8 CROWD_RESULT count=100 scenario=chokepoint fps=60.01 sim_ms=1.257 p95_frame=18.456",
+      "9 CROWD_RESULT count=300 scenario=chokepoint fps=59.97 sim_ms=3.754 p95_frame=21.415",
+      "10 CROWD_RESULT count=500 scenario=chokepoint fps=60.05 sim_ms=7.374 p95_frame=25.802",
+      "11 CROWD_RESULT count=1000 scenario=chokepoint fps=53.90 sim_ms=22.829 p95_frame=40.905",
+      "12 CROWD_SUITE_DONE res://docs/benchmark_results/filtered_pairs.json"
+    ],
+    "next": 13,
+    "more": false,
+    "dropped": 0
+  },
+  "paused_before": {
+    "run_id": "3cfb7324",
+    "child_count": 3,
+    "class": "Node2D",
+    "path": ".",
+    "properties": {
+      "get_benchmark_state()": {
+        "completed_cases": 8,
+        "count": 1000,
+        "debt_seconds": 0.00600400000000004,
+        "diagnostics": {
+          "candidate_checks": 35818,
+          "count": 1000,
+          "crossings": 100,
+          "gate_population": 624,
+          "invalid_positions": 0,
+          "max_penetration": 2.53800392150879,
+          "overlap_pairs": 416,
+          "ticks": 105
+        },
+        "grid_ms": 8.529,
+        "movement_ms": 4.005,
+        "paused": true,
+        "scenario": "chokepoint",
+        "separation_ms": 5.725,
+        "simulation_ms": 18.46,
+        "suite_finished": true,
+        "suite_running": false
+      }
+    },
+    "script": "res://scripts/benchmarks/crowd_benchmark.gd"
+  },
+  "paused_after": {
+    "run_id": "3cfb7324",
+    "child_count": 3,
+    "class": "Node2D",
+    "path": ".",
+    "properties": {
+      "get_benchmark_state()": {
+        "completed_cases": 8,
+        "count": 1000,
+        "debt_seconds": 0.00600400000000004,
+        "diagnostics": {
+          "candidate_checks": 63426,
+          "count": 1000,
+          "crossings": 100,
+          "gate_population": 624,
+          "invalid_positions": 0,
+          "max_penetration": 2.53800392150879,
+          "overlap_pairs": 416,
+          "ticks": 105
+        },
+        "grid_ms": 8.529,
+        "movement_ms": 4.005,
+        "paused": true,
+        "scenario": "chokepoint",
+        "separation_ms": 5.725,
+        "simulation_ms": 18.46,
+        "suite_finished": true,
+        "suite_running": false
+      }
+    },
+    "script": "res://scripts/benchmarks/crowd_benchmark.gd"
+  },
+  "resumed": {
+    "run_id": "3cfb7324",
+    "child_count": 3,
+    "class": "Node2D",
+    "path": ".",
+    "properties": {
+      "get_benchmark_state()": {
+        "completed_cases": 8,
+        "count": 1000,
+        "debt_seconds": 0.0392033333333334,
+        "diagnostics": {
+          "candidate_checks": 35306,
+          "count": 1000,
+          "crossings": 148,
+          "gate_population": 700,
+          "invalid_positions": 0,
+          "max_penetration": 3.94097900390625,
+          "overlap_pairs": 806,
+          "ticks": 137
+        },
+        "grid_ms": 10.116,
+        "movement_ms": 3.807,
+        "paused": false,
+        "scenario": "chokepoint",
+        "separation_ms": 8.772,
+        "simulation_ms": 22.896,
+        "suite_finished": true,
+        "suite_running": false
+      }
+    },
+    "script": "res://scripts/benchmarks/crowd_benchmark.gd"
+  },
+  "controls": {
+    "run_id": "3cfb7324",
+    "child_count": 3,
+    "class": "Node2D",
+    "path": ".",
+    "properties": {
+      "get_benchmark_state()": {
+        "completed_cases": 8,
+        "count": 100,
+        "debt_seconds": 0.00773633333333334,
+        "diagnostics": {
+          "candidate_checks": 100,
+          "count": 100,
+          "crossings": 0,
+          "gate_population": 0,
+          "invalid_positions": 0,
+          "max_penetration": 0,
+          "overlap_pairs": 0,
+          "ticks": 2
+        },
+        "grid_ms": 0.769,
+        "movement_ms": 0.185,
+        "paused": false,
+        "scenario": "dispersed",
+        "separation_ms": 0.003,
+        "simulation_ms": 0.984,
+        "suite_finished": true,
+        "suite_running": false
+      }
+    },
+    "script": "res://scripts/benchmarks/crowd_benchmark.gd"
+  },
+  "camera": {
+    "run_id": "3cfb7324",
+    "child_count": 0,
+    "class": "Camera2D",
+    "path": "Camera",
+    "properties": {
+      "position": "Vector2(880, 337.39584)",
+      "zoom": "Vector2(0.4884366, 0.4884366)"
+    }
+  },
+  "monitors": {
+    "run_id": "3cfb7324",
+    "monitors": {
+      "audio": {
+        "output_latency_ms": 10
+      },
+      "engine": {
+        "display": "Windows",
+        "frames_drawn": 9424,
+        "max_fps": 0,
+        "physics_ticks_per_second": 60,
+        "rendering_method": "gl_compatibility",
+        "time_scale": 1,
+        "vsync": "enabled"
+      },
+      "memory": {
+        "message_buffer_max_mib": 0,
+        "static_max_mib": 101.24,
+        "static_mib": 84.62
+      },
+      "objects": {
+        "nodes": 8,
+        "objects": 1538,
+        "orphan_nodes": 0,
+        "resources": 19
+      },
+      "pipeline_compilations": {
+        "canvas": 0,
+        "draw": 0,
+        "mesh": 0,
+        "specialization": 0,
+        "surface": 0
+      },
+      "render": {
+        "buffer_mem_mib": 8.19,
+        "draw_calls_in_frame": 5,
+        "objects_in_frame": 1195,
+        "primitives_in_frame": 2396,
+        "texture_mem_mib": 5.85,
+        "video_mem_mib": 14.04
+      },
+      "time": {
+        "fps": 60,
+        "navigation_ms": 0.003,
+        "physics_ms": 0.141,
+        "process_ms": 17.106
+      }
+    }
+  }
+}

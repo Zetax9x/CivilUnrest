@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://c6bsjr5k04gyg"]
+
+[ext_resource type="Script" uid="uid://br73vo3gk7yhh" path="res://scripts/benchmarks/crowd_benchmark.gd" id="1_avglb"]
+[ext_resource type="Script" uid="uid://bu636rg7qp5w1" path="res://scripts/rendering/crowd_renderer.gd" id="2_m8v6i"]
+
+[node name="CrowdBenchmark" type="Node2D" unique_id=100339710]
+script = ExtResource("1_avglb")
+
+[node name="CrowdRenderer" type="Node2D" parent="." unique_id=494243763]
+script = ExtResource("2_m8v6i")
+
+[node name="Instances" type="MultiMeshInstance2D" parent="CrowdRenderer" unique_id=811226319]
+
+[node name="Camera" type="Camera2D" parent="." unique_id=201631448]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1753351647]
+
+[node name="Status" type="Label" parent="HUD" unique_id=207880658]
+offset_left = 18.0
+offset_top = 12.0
+offset_right = 1140.0
+offset_bottom = 115.0
+theme_override_font_sizes/font_size = 16
+text = "CivilUnrest — Crowd Benchmark"

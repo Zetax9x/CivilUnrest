@@ -1,0 +1,44 @@
+﻿[
+    {
+        "Count":  100,
+        "SameSpawn":  true,
+        "SameGeometry":  true,
+        "MaximumStep":  2.16672825813293,
+        "WallSweepViolations":  0
+    },
+    {
+        "Count":  300,
+        "SameSpawn":  true,
+        "SameGeometry":  true,
+        "MaximumStep":  2.16672921180725,
+        "WallSweepViolations":  0
+    },
+    {
+        "Count":  500,
+        "SameSpawn":  true,
+        "SameGeometry":  true,
+        "MaximumStep":  2.16673159599304,
+        "WallSweepViolations":  0
+    },
+    {
+        "Count":  600,
+        "SameSpawn":  true,
+        "SameGeometry":  true,
+        "MaximumStep":  2.16673350334167,
+        "WallSweepViolations":  0
+    },
+    {
+        "Count":  800,
+        "SameSpawn":  true,
+        "SameGeometry":  true,
+        "MaximumStep":  2.16673159599304,
+        "WallSweepViolations":  0
+    },
+    {
+        "Count":  1000,
+        "SameSpawn":  true,
+        "SameGeometry":  true,
+        "MaximumStep":  2.16673302650452,
+        "WallSweepViolations":  0
+    }
+]

@@ -1,0 +1,47 @@
+{
+  "run_id": "968ea4ef",
+  "context": "1000 chokepoint, late steady state; profiling separate from comparative suite",
+  "seconds": 2.007,
+  "frames": 120,
+  "functions": [
+    {
+      "function": "build_pairs",
+      "calls": 121,
+      "self_ms": 269.566,
+      "total_ms": 348.743
+    },
+    {
+      "function": "integrate",
+      "calls": 61,
+      "self_ms": 110.037,
+      "total_ms": 196.556
+    },
+    {
+      "function": "separate",
+      "calls": 60,
+      "self_ms": 98.336,
+      "total_ms": 102.395
+    },
+    {
+      "function": "_draw",
+      "calls": 120,
+      "self_ms": 54.644,
+      "total_ms": 54.644
+    },
+    {
+      "function": "_add_pair",
+      "calls": 167960,
+      "self_ms": 25.959,
+      "total_ms": 25.959
+    },
+    {
+      "function": "rebuild",
+      "calls": 121,
+      "self_ms": 18.328,
+      "total_ms": 78.898
+    }
+  ],
+  "memory_static_mib": 84.41,
+  "draw_calls": 5,
+  "nodes": 8
+}

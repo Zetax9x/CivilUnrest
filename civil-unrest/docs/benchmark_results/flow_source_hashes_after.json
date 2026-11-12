@@ -1,0 +1,62 @@
+﻿[
+    {
+        "path":  "scripts/simulation/crowd_simulation.gd",
+        "sha256":  "72181CAAC6452D1AD2EE5668FC226E609929D6C22E14C1D17154163993EA2E9C",
+        "changed":  true
+    },
+    {
+        "path":  "scripts/simulation/benchmark_scenario.gd",
+        "sha256":  "B868C87FC307D8BCCEEE6A61C294E9EF545B41F1F634FE8387B46A2F690697BB",
+        "changed":  true
+    },
+    {
+        "path":  "scripts/simulation/crowd_state.gd",
+        "sha256":  "1C992B0795DEF816B820E4E7883719530B1428F6536489A470CC8B7A2AF290E3",
+        "changed":  true
+    },
+    {
+        "path":  "scripts/rendering/crowd_renderer.gd",
+        "sha256":  "7FC2EE2AADBADBE34D6F3CA8617C629B02DD03E42360B5B3C7B0CBBD2F2588AE",
+        "changed":  false
+    },
+    {
+        "path":  "scripts/benchmarks/benchmark_recorder.gd",
+        "sha256":  "2574DD711267895A5C47CE732568A0E0DE1BF52DB4940F798DB88DAFE0F6913A",
+        "changed":  false
+    },
+    {
+        "path":  "scripts/benchmarks/crowd_benchmark.gd",
+        "sha256":  "4F66257C7EA0E5210CFA7B573B2EFAF16C7E483BBA0BFC3BE90156CAAF2408D8",
+        "changed":  true
+    },
+    {
+        "path":  "tests/crowd/crowd_checks.gd",
+        "sha256":  "A219E238D870EE4B7A07B7F59624545A7F8CA0BCD65DBF1CEB27D330FD0EEE5A",
+        "changed":  false
+    },
+    {
+        "path":  "scripts/navigation/spatial_grid.gd",
+        "sha256":  "CC92AED7F5C582C40FF50D576D167CD946CDA53EFAD54A0BA39488ED5E620B22",
+        "changed":  false
+    },
+    {
+        "path":  "tests/crowd/contact_checks.gd",
+        "sha256":  "A5401A278F371F445D120353E5124CC4384554409261F24242CFA37ECDEEBCB3",
+        "changed":  true
+    },
+    {
+        "path":  "scripts/simulation/crowd_movement.gd",
+        "sha256":  "F8A80CCC5EA111ABC82A1E50815ABBBA06C5EAFE153C5164E7E805553BCB347B",
+        "changed":  true
+    },
+    {
+        "path":  "tests/crowd/flow_checks.gd",
+        "sha256":  "AD66570B94A404DFDA1EDA9426C70719DC0659B858A6A4BFF8DCE9D5AAB10FE6",
+        "changed":  true
+    },
+    {
+        "path":  "tests/crowd/flow_diagnosis.gd",
+        "sha256":  "AD8DFCE78F6B2092898965DD2199D2A6A4A06D1D32368E6D0B12751A3CC695F0",
+        "changed":  true
+    }
+]

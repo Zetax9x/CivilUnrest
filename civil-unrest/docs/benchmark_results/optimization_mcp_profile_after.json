@@ -1,0 +1,205 @@
+{
+  "run_id": "a1723f03",
+  "monitors": {
+    "audio": {
+      "output_latency_ms": 10
+    },
+    "engine": {
+      "display": "Windows",
+      "frames_drawn": 761,
+      "max_fps": 0,
+      "physics_ticks_per_second": 60,
+      "rendering_method": "gl_compatibility",
+      "time_scale": 1,
+      "vsync": "enabled"
+    },
+    "memory": {
+      "message_buffer_max_mib": 0,
+      "static_max_mib": 101.24,
+      "static_mib": 84.61
+    },
+    "objects": {
+      "nodes": 8,
+      "objects": 1536,
+      "orphan_nodes": 0,
+      "resources": 19
+    },
+    "pipeline_compilations": {
+      "canvas": 0,
+      "draw": 0,
+      "mesh": 0,
+      "specialization": 0,
+      "surface": 0
+    },
+    "render": {
+      "buffer_mem_mib": 8.19,
+      "draw_calls_in_frame": 5,
+      "objects_in_frame": 1192,
+      "primitives_in_frame": 2390,
+      "texture_mem_mib": 5.85,
+      "video_mem_mib": 14.04
+    },
+    "time": {
+      "fps": 60,
+      "navigation_ms": 0.003,
+      "physics_ms": 0.045,
+      "process_ms": 24.098
+    }
+  },
+  "sample": {
+    "avg_fps": 60.3,
+    "delta": {
+      "nodes": 0,
+      "objects": 4,
+      "orphan_nodes": 0,
+      "static_memory_mib": 0.09
+    },
+    "draw_calls": {
+      "avg": 5,
+      "max": 5,
+      "median": 5,
+      "min": 5,
+      "p95": 5
+    },
+    "frame_ms": {
+      "avg": 16.578,
+      "max": 28.079,
+      "median": 14.441,
+      "min": 5.218,
+      "p95": 25.873
+    },
+    "frames": 121,
+    "physics_ms": {
+      "avg": 0.047,
+      "max": 0.053,
+      "median": 0.045,
+      "min": 0.043,
+      "p95": 0.053
+    },
+    "process_ms": {
+      "avg": 26.742,
+      "max": 28.08,
+      "median": 26.123,
+      "min": 24.098,
+      "p95": 28.08
+    },
+    "seconds": 2.006,
+    "spike_count": 0,
+    "spike_threshold_ms": 28.882
+  },
+  "scripts": {
+    "seconds": 2.006,
+    "frames": 122,
+    "script_ms_per_frame": 121.899,
+    "functions": [
+      {
+        "file": "res://scripts/simulation/crowd_movement.gd",
+        "line": 148,
+        "function": "_travel_fraction",
+        "calls": 108447,
+        "self_ms": 14131.013,
+        "total_ms": 14131.013,
+        "body_line": 149
+      },
+      {
+        "file": "res://scripts/simulation/crowd_movement.gd",
+        "line": 31,
+        "function": "integrate",
+        "calls": 60,
+        "self_ms": 276.612,
+        "total_ms": 14498.691,
+        "body_line": 32
+      },
+      {
+        "file": "res://scripts/navigation/spatial_grid.gd",
+        "line": 75,
+        "function": "build_pairs",
+        "calls": 60,
+        "self_ms": 166.202,
+        "total_ms": 295.508,
+        "body_line": 76
+      },
+      {
+        "file": "res://scripts/simulation/crowd_movement.gd",
+        "line": 98,
+        "function": "separate",
+        "calls": 61,
+        "self_ms": 127.255,
+        "total_ms": 127.255,
+        "body_line": 99
+      },
+      {
+        "file": "res://scripts/rendering/crowd_renderer.gd",
+        "line": 54,
+        "function": "_draw",
+        "calls": 122,
+        "self_ms": 49.206,
+        "total_ms": 49.206,
+        "body_line": 55
+      },
+      {
+        "file": "res://scripts/navigation/spatial_grid.gd",
+        "line": 111,
+        "function": "_add_pair",
+        "calls": 295110,
+        "self_ms": 41.131,
+        "total_ms": 41.131,
+        "body_line": 112
+      },
+      {
+        "file": "res://scripts/simulation/crowd_simulation.gd",
+        "line": 37,
+        "function": "step",
+        "calls": 60,
+        "self_ms": 33.776,
+        "total_ms": 14996.393,
+        "body_line": 38
+      },
+      {
+        "file": "res://scripts/simulation/benchmark_scenario.gd",
+        "line": 39,
+        "function": "destination",
+        "calls": 60000,
+        "self_ms": 20.543,
+        "total_ms": 20.543,
+        "body_line": 40
+      },
+      {
+        "file": "res://scripts/navigation/spatial_grid.gd",
+        "line": 45,
+        "function": "rebuild",
+        "calls": 60,
+        "self_ms": 12.211,
+        "total_ms": 40.513,
+        "body_line": 46
+      },
+      {
+        "file": "res://scripts/navigation/spatial_grid.gd",
+        "line": 42,
+        "function": "cell_of",
+        "calls": 60000,
+        "self_ms": 9.713,
+        "total_ms": 9.713,
+        "body_line": 43
+      },
+      {
+        "file": "res://scripts/benchmarks/crowd_benchmark.gd",
+        "line": 81,
+        "function": "_process",
+        "calls": 121,
+        "self_ms": 0.843,
+        "total_ms": 14998.586,
+        "body_line": 82
+      },
+      {
+        "file": "res://scripts/rendering/crowd_renderer.gd",
+        "line": 44,
+        "function": "present",
+        "calls": 122,
+        "self_ms": 0.657,
+        "total_ms": 0.657,
+        "body_line": 45
+      }
+    ]
+  }
+}
