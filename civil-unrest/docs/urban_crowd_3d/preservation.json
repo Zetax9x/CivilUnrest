@@ -1,0 +1,11 @@
+﻿{
+    "total":  269,
+    "unchanged":  268,
+    "expected_changed":  [
+                             "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\presentation\\crowd_session.gd"
+                         ],
+    "unexpected_changes":  [
+
+                           ],
+    "passed":  true
+}

@@ -1,0 +1,1078 @@
+[
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scenes\\urban\\UrbanSquare.tscn",
+    "Hash": "C7F92ADFAD1D86AF8314D832412D85FBDDD1259F58AF709068F7E2E3F5DDDB78"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\world\\urban_slice.gd.uid",
+    "Hash": "6E4DA805F37831DAC522A37A908FF0E6D3051CE127CD69E1A9DE64E1F3D0B90F"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\world\\urban_slice.gd",
+    "Hash": "C80CB5B378A59659FAC582A70240087A1A69DFD9B47D2275B3FD7D0AC61230EE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\world\\urban_environment.gd.uid",
+    "Hash": "93669F29514E3BA3A431F3F1748118CC117BBA147455E25BA52CFFC8AB84D448"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\world\\urban_environment.gd",
+    "Hash": "9B7394E85A8D41B35ABA94866904E9DBF57749161D9345FE9A97D5CD95924A74"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\presentation\\vertical_slice_checks.gd.uid",
+    "Hash": "CC0605309EC85033E4CACCC7BBF2640F2B761F330D4C3ED8EFEB631830ACC818"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\presentation\\vertical_slice_checks.gd",
+    "Hash": "2E24752E817C7810D4C56D22B6ED707AB15D488A7FBCE26F8A71D639394CD51A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\presentation\\character_checks.gd.uid",
+    "Hash": "4A2CD838B2C246C14FDE7C9BC29D90737BDE7E82D349A74CF478E86E1D50CF95"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\presentation\\character_checks.gd",
+    "Hash": "0353204E9258FC91254BBF0DBE6E0CAB96DA6F0E1CF3EDCF23B615C9305163EE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scenes\\main\\Main.tscn",
+    "Hash": "8FE99F4F061B90236BBDF890420F3E56279C60556576A1C7F3C3F0AA6C22152A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scenes\\benchmarks\\CrowdBenchmark.tscn",
+    "Hash": "8C5DF25A651F1B956E25892BC5FCDC923464F45D913D62E5C83E275E06C8B376"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\simulation\\crowd_state.gd.uid",
+    "Hash": "96D60F23152DE942178ABB2FCEB6827086095161BC0171D16D0B5B1A120F11F8"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\simulation\\crowd_state.gd",
+    "Hash": "1C992B0795DEF816B820E4E7883719530B1428F6536489A470CC8B7A2AF290E3"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\simulation\\crowd_simulation.gd.uid",
+    "Hash": "E27A5D288E165F0ACFB2934627CE55283AE1B4D25D4885F9E34D5F708472458F"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\simulation\\crowd_simulation.gd",
+    "Hash": "72181CAAC6452D1AD2EE5668FC226E609929D6C22E14C1D17154163993EA2E9C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\simulation\\crowd_movement.gd.uid",
+    "Hash": "C0D7D3E20C1C39BD5AA24E2FA4321C624678B12E9ADA48D3731843E8416AB6AC"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\simulation\\crowd_movement.gd",
+    "Hash": "F8A80CCC5EA111ABC82A1E50815ABBBA06C5EAFE153C5164E7E805553BCB347B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\simulation\\benchmark_scenario.gd.uid",
+    "Hash": "32DF1F40A336EC905EF92F8D6DA86B4BF34A7B2B74AB43748D8E827B8A25FCF0"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\simulation\\benchmark_scenario.gd",
+    "Hash": "B868C87FC307D8BCCEEE6A61C294E9EF545B41F1F634FE8387B46A2F690697BB"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\mcp_test_simulation.gd.uid",
+    "Hash": "738E65AEC21E55FE466BA1B272C4EA9F39DB74751C703A12998BF4DB125529A5"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\mcp_test_simulation.gd",
+    "Hash": "47D2EA31C413DB5EDFD1D422689C757FC9B50CDF1375439D2DEC986A3E919B81"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\mcp_test_checks.gd.uid",
+    "Hash": "0D8FD6D2E5FE19EDCC6F6ED089543C9AFD348AE393AB218A724AFD8A23F7A242"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\mcp_test_checks.gd",
+    "Hash": "E6CBA0FD82DBED5FEE4D00A543D2C0E8C4A3337BF1718794FF3CF2E13F1C739E"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\MCP_Test.tscn",
+    "Hash": "5E268BAF000F7081CDE90C6ACC993545C5FB7E572B156826D0FF32080AC29F82"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\mcp_test.gd.uid",
+    "Hash": "3B6B5B7ECE42077C0C699D64A2AF912FE73C95BA126E0FA5C901D409A8645C61"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\mcp_test.gd",
+    "Hash": "17C08CB896301F401E5F1A8C147D4E8CCE0F8028AF0BD5C15AFCB2F72CFD3630"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scenes\\art_tests\\ItalianStreet.tscn",
+    "Hash": "3F506146B0151717CA023FA333456B90FD33BA33C43A1524FA15BB9A364733B0"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scenes\\art_tests\\CharacterShowcase.tscn",
+    "Hash": "785D19706BFD6FD76F4E29CAC9E1438AEA898F5554A6E60DE24D34AC99D0AAAA"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\wood.tres",
+    "Hash": "2425FE128A7A7DEFD26D2C08FE0EB604DE7F31E9C9FD5AF6EE7846EF824A298F"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\urban_surface.gdshader.uid",
+    "Hash": "7705E63F9F10D0263EA43100FF3DBB87AEB23CE1A1DF7FB0CC8BBE8A4CA3C65C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\urban_surface.gdshader",
+    "Hash": "81243FAA416A0A50D6EC18E5DA8B2FD342CA6B1F8FDE64FAB89400AB5ABE10FD"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\terracotta.tres",
+    "Hash": "ABF886110BBD91F6520ACB912AC39B5690F174EC6A3A63C9592886728AD225B7"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\soil.tres",
+    "Hash": "8C84DF2CE00A8FA470ADB8F43F4171D889ABBBBF84490894654C7A0F3A8EDB98"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\skin.tres",
+    "Hash": "8E700AB00E81A620EBEC44150D2F3B299368674DCF5FEA8996FD8A5DCE9E1F34"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\shutters.tres",
+    "Hash": "2A10403D45AAB3A530C0172F39AF2A40F106DAC369B9A53E3DAD63D5D5B924F5"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\rubber.tres",
+    "Hash": "6DE2BED3CE90EF84F05CD4888493D1A618FE965D0CFEB715C1AD49D8AAE0A6F9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\police_white.tres",
+    "Hash": "DE0CC559EBBC8F55EF98695E3BB0AE1F34BD2864DB3ADAF6591DDD80E56D8E6C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\police_blue.tres",
+    "Hash": "2FE53E9831D0897E3A864D3DCB4365E6DE47BB4573B7C4EEC354A44077D6606D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\plaster_repair.tres",
+    "Hash": "3A89A8D328D99DB72D166B8BAC328777C8996FF6D48928243218BFB41D8A9503"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\plaster_ochre.tres",
+    "Hash": "CAC280AF30C501BB770F2DB31F420E10C2FA7ABA269A4BE65A45164C1D36EDF9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\paving.tres",
+    "Hash": "B69D2F1EB26F3D7BAE0599D39A4EAAEF3A521338F8DE3CAA4A0512C9C95EB6EF"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\paint.tres",
+    "Hash": "BD2C0E203588DA48C235A3F354E9150B98F0081B29A8AF794893C9332067B91D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\limestone.tres",
+    "Hash": "B930434AB6AAD9598AAD860F3864A1AC27FF0362B3A692019963062400D7FBAB"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\leaves.tres",
+    "Hash": "10CCDC84BF9F49DDBB639EA6150FF441F902D9C1B904A25980D121A44108A635"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\leaf_light.tres",
+    "Hash": "ADE463E74268C8D1A69B4452E58064A7EBEEC68A0C6A4177976FA83BBC72DCCB"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\jacket.tres",
+    "Hash": "4972B0BCC46483DEEB1EAFE6FCAB437B2D5EC432E32304F2A5286CB75BB5236E"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\iron.tres",
+    "Hash": "626295C13BF24E423000F1D706F8CC34207238EA8C098BCDBBF11A0EC1188B03"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\hair.tres",
+    "Hash": "960D6A4B88D505B3268F4FB446097155031B3B9186B29F36A37A382F889C8788"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\glass.tres",
+    "Hash": "2264A300E06EDDD8BC6038EB39C44C8CA9AB653E97CDEBE79DDAB5F645480921"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\denim.tres",
+    "Hash": "DA0987BCF9FE5D395BF2D447E919EECD3604A2114DB6301FC7FF7B856E402E56"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\dark_stone.tres",
+    "Hash": "EDA7CDA563B8CFA90AF3B4993AD2DED52FC995DA04F0F38E9BBD185444EA1EE1"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\chrome.tres",
+    "Hash": "71D47C3D3A1CA97F676815F8EEDB4B2F2660FBE80749AAA0EDDBBE572106972B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\car_sage.tres",
+    "Hash": "B3A61CB9ECFE085DCEE1468E10A087CAC37972945E628DE997345555BEEBCBD0"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\assets\\art_direction\\materials\\asphalt.tres",
+    "Hash": "BC14299BB10BF06EB146B2AA8801E9708F9A9FFC97C57F1FAAD2F317691D56FB"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\evidence\\resumed.png",
+    "Hash": "1EA9AB68EAC14386D2430C6719B4BBAE76265B54A1DC2F12B722A3F7FEE88A78"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\evidence\\results.json",
+    "Hash": "6DC57CC97B6D3D26D3A0AA930FD4AC384DE582D340A76A13BF21C1848F7CE5C9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\evidence\\paused.png",
+    "Hash": "B17AA0D882C61BB6A9865A2D5B9232858F63C5EEB06DFFE56C1F1647AC5F6632"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\mcp\\evidence\\moving.png",
+    "Hash": "A2106C28A2AF6D46AA5EDB8BA78BD6D87B480E07FA5D7E62F1F37658C107AF23"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\rendering\\crowd_renderer_3d.gd.uid",
+    "Hash": "C8FB28313414F1BBC3831F2422D25E5DBBAC2B16A2CB98F315DDBE20202A6EDE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\rendering\\crowd_renderer_3d.gd",
+    "Hash": "CB26F2050E74AABDBC0AEFE8C8783BCB0B6D48239E9AB5647BCACBDC4A442926"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\rendering\\crowd_renderer.gd.uid",
+    "Hash": "246F367F88E26C30CD06F1CCF244EC9D63A743CBF8F9D8CBFFCA3A56E5940BEF"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\rendering\\crowd_renderer.gd",
+    "Hash": "7FC2EE2AADBADBE34D6F3CA8617C629B02DD03E42360B5B3C7B0CBBD2F2588AE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\rendering\\crowd_3d_adapter.gd.uid",
+    "Hash": "394708B40513054CDF4C9422182EF231BF45A6DED3DEFD28D76674219F1956BA"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\rendering\\crowd_3d_adapter.gd",
+    "Hash": "5E13345DD207741251FE4354FE2FD545CBA361BC76E40EFF9271987304E1069E"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\presentation\\crowd_session.gd.uid",
+    "Hash": "F23E986647A6D6062F69945B8FA91995251358855CCA9B09BC4620EB3EAE232B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\presentation\\crowd_session.gd",
+    "Hash": "AC5FAD287339F75F9B2735DE7A9EFE146E49943A1C9916A4DA8E8DFBD5E6F453"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\navigation\\spatial_grid.gd.uid",
+    "Hash": "7C858AD51D3999E7093307C95CC01D7EFCCFA8AC1E25A3EF28B9DCA6DA2D80BA"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\navigation\\spatial_grid.gd",
+    "Hash": "CC92AED7F5C582C40FF50D576D167CD946CDA53EFAD54A0BA39488ED5E620B22"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_visual_state.gd.uid",
+    "Hash": "C07BDCB3C7038FA0F3E34BA43D5B65D65631F291C5F41F4CBAB7A5957558850D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_visual_state.gd",
+    "Hash": "E6066B93668B7AC8BD411EDAB55D42EFB9D2C924CEECF9AE5CBF11E76C9111DE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_simulation_adapter.gd.uid",
+    "Hash": "709C5BAFDCB5DB97A3332DE6A46DBA7AFCC410DF4D9B9C9D64A86F08D4899BBC"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_simulation_adapter.gd",
+    "Hash": "323B4EF6A4356D53D12DE728456261714CFA7460B7312C03E66A2DB9D4081334"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_renderer.gd.uid",
+    "Hash": "BF8FDB2FB0D2C9CB2F56A8024AC476B1168ABEF81C27DEF26AD466C4CD2A0D68"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_renderer.gd",
+    "Hash": "37D98B708FC365A9724ACF3CD9E0E9273A68287D88990813D54C9DD037459399"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_pose_library.gd.uid",
+    "Hash": "79DFA20510DFE7A0CB1D9665CEE924BFC9482801D754A34360A2F4D33FCECB74"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_pose_library.gd",
+    "Hash": "4A587255512C584A41A239B40E6465150CD20FDCE9545C9FD0955F4EDCAD7B3A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_catalog.gd.uid",
+    "Hash": "1F144781C6D942F352FFDFB2021806525CE34EE13111AF899A8FE20C16038533"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.claude\\skills\\godot-visual-qa\\SKILL.md",
+    "Hash": "CF2543B0C19CA00B94C890980B8240A9EA0ED05167260050974B84293C50A85D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\characters\\character_catalog.gd",
+    "Hash": "3D05926C374F1DA19A30566D9C4FDD1103ABF5EBEE352D7A96100E0BFC7CDEAB"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.claude\\skills\\godot-debugging\\SKILL.md",
+    "Hash": "94EE5D904ACA4F48C913199B3C28649E37FBBD4062F948040EEA5D5138023CDC"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\camera\\isometric_camera.gd.uid",
+    "Hash": "D2BA3086042E572B19FBE88306481521551CC5C4637A8BAA46F73548EA07635B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\camera\\isometric_camera.gd",
+    "Hash": "8BC68B31B421AD2F8DD00D978EB321CC57985AE866AED324FC3C6A1E0200C1BE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\parse.log",
+    "Hash": "CA99259412E7139E74DB331F4F669950E582095BB7C4CBDE9C9D9624EBBDCCFE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\optimization_contacts_v3.log",
+    "Hash": "61214D494465E500C37BFE8B2CF966A1975CE1F92C3630BC42CD5ECE15E268B9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\optimization_contacts_v2_diagnostic.log",
+    "Hash": "B48CF0478CD5393AF7EDA73C4C790F78BCBC2AF6E312ABB6477A90A05153F634"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\optimization_contacts_v2.log",
+    "Hash": "CC467F301F1F7C8C0E323ACA293A9D86BA1599CBAF3B17F39FC38F8F6762CF59"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\optimization_contacts_v1.log",
+    "Hash": "D741D886AA5E617130162E7FFF2AF3E6821B275CC9800E0F3A0AD54F93FA1BAC"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\optimization_contacts_lanes.log",
+    "Hash": "6C5E15B2EE3E37F0DE3122FA7E3093C89498E0591EB6B5D448F098C2FF88C8F3"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\optimization_contacts_final.log",
+    "Hash": "8D834BCCA00B8E3DA1B12DF92A83144B33DEF1C82886A6C7596F58E51E3CE1C3"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\optimization_checks_v1.log",
+    "Hash": "3090E12729B0B19C55994C615E8B84D3A5E7CDD3A3EC8D2EFCC64C2E1530129C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\optimization_checks_final_strict.log",
+    "Hash": "566F9CE5957D48AF71EB741851306EE3A471B4D7D2C6258D2DB97D7C821341AB"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\optimization_checks_final.log",
+    "Hash": "566F9CE5957D48AF71EB741851306EE3A471B4D7D2C6258D2DB97D7C821341AB"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\grid_checks.log",
+    "Hash": "C9D7C10999D7B1A721BFBABC78358D3D1C48C4C2A92E82D0A12F88EC53C18CFF"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_soak_final.log",
+    "Hash": "E8D90900FFEAD415A872101E7D1C156756A59F0C3BD2C34371ABCCBB7907356E"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_safety_final.log",
+    "Hash": "55EF43FC3CA0DF1A5829779F74CB34B4BECFC9AA719720B81A93964EBDE0D8FE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_yield_opposed.log",
+    "Hash": "05BC29E3270B68B7D23A05DD420B66AB42F6E49C4FA2DDCA873AA432DF828E68"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_vertical_opposed.log",
+    "Hash": "7B6FF85A3FED03767CD08F2932C6AD055FF83805D9B0115C7DED4004AD66B9A3"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_staging_opposed.log",
+    "Hash": "272DFBA0DA0EA8D2945D20FB9B9DB76106C6BA32417880021971C89734FDD9D7"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_route.log",
+    "Hash": "7BA235232B3BF19A6978E4537F864F4C8C1B0568C9389ED76F3DF3615F58DD63"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_ranked.log",
+    "Hash": "47C7FFAC3A08AFA4C77914EC8967BB53281811FEEC23339798061519440032FE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_lateral.log",
+    "Hash": "DF1E34E802CDE80851B4BE5BB1B0A7FA963E31774FFFF7A2C90B3831AE591480"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_early20.log",
+    "Hash": "34875F98470667D9AD57239D9B6DB545366304758CF5C0F7FF013D30AE304A05"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_early.log",
+    "Hash": "6D8B0EAB732D40BC988C0CB89397C42F9E7E4086802EE9A697B9363BD488C4C0"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_detour_opposed.log",
+    "Hash": "00060A3D1713D5190338FAA9C5AF4BE18D6DE568CBBC6F377E9384250E490FE0"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_clearance.log",
+    "Hash": "5E5B09276066C7DA9A8C70ABC2D9093077AC8ECFBC60DD801C5EC903E2491B52"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_capped_opposed.log",
+    "Hash": "F521E4D1A899178389BFA80CE6C92B424B2E50128C67406B98622618342D55F3"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_band.log",
+    "Hash": "A4A814BBCCF429633FEB1BE4E0DAD1AB7ABC35F827203A22912672CEDCB1D707"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_probe_adaptive_opposed.log",
+    "Hash": "F937DC94BF801874A156228C31DE5437AA131F92CB89E1D766E4980C3068AA02"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_opposing_moderate_after.log",
+    "Hash": "01DAF50410E40C93DBA6D4336D313F9ADC4CFA557A8B3687915BE67DCDEECC3F"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_opposing_final.log",
+    "Hash": "BB9212395F9A2E6F3456F034CC3C21933F887EBDE888095D71FC731A8001F6B7"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_opposing_after.log",
+    "Hash": "BE92F8DED122213AB22F0D484825AF998F2FDD6CB0463855F4F99EAA472C0830"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_diagnosis_before.log",
+    "Hash": "F01DEA4856F13907BFFF0A435EE14E3E16E486E787429327A8FAEBED7D79DED5"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_diagnosis.gd.uid",
+    "Hash": "3BC09015B068E38D021C1145706F67655D5F7B32F8488BC4845060F8AF825FDD"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_diagnosis.gd",
+    "Hash": "AD8DFCE78F6B2092898965DD2199D2A6A4A06D1D32368E6D0B12751A3CC695F0"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_crowd_checks.log",
+    "Hash": "99536C0B347714102C21882DA2C757A3D1123FB235699076005463C783929DFA"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_counters_final.log",
+    "Hash": "0C27933D0C9021D59EF19784F7CC42E72F9BD07205750D3FDF378525B4DAD507"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_contact_checks.log",
+    "Hash": "57F78CA24D793663C37BB81B9504D1D2542A242185DA208C7A4B41C49C235DFB"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_checks_yield_after.log",
+    "Hash": "43648B82760F1948897F14544D26A325F487C40702E354FC21DFB4D02EEE0C36"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_checks_final.log",
+    "Hash": "CBE57C7B0C116436175606A8D537D9B4C730B9ECAB5C70CD8CD97A85EEBB644B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_checks_before.log",
+    "Hash": "A85C6E94950F7477610024A4EC1FE08DECB085C3E8EBA18876806E58CAA0D5C1"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_checks_after.log",
+    "Hash": "B5C087CB43114FFFCF592D749000D5EEFC2479B54DE91A7D6587ED281E92CC5D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_checks.gd.uid",
+    "Hash": "38247E72DB4D589EF95F48D6B83170CA2B4A65737C886E0219BE456FAAF16ED3"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_checks.gd",
+    "Hash": "AD66570B94A404DFDA1EDA9426C70719DC0659B858A6A4BFF8DCE9D5AAB10FE6"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\flow_ablation_clearance_only.log",
+    "Hash": "5C106C2FCC0CC5A2FFB411FCEAC2FD01ED9F86FCE5FB06FEB0F8918B1372FA8A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\crowd_checks.gd.uid",
+    "Hash": "1170CA4B3A28E0D9083DD90C4516FD81CE481263A416D4D025741DF44A46EE00"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\crowd_checks.gd",
+    "Hash": "A219E238D870EE4B7A07B7F59624545A7F8CA0BCD65DBF1CEB27D330FD0EEE5A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\contact_checks.gd.uid",
+    "Hash": "D1B48862E9CE46B70B31190F9D9E4C5AAE318880B5EB52B1ACA49D44FAD3A22F"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\contact_checks.gd",
+    "Hash": "A5401A278F371F445D120353E5124CC4384554409261F24242CFA37ECDEEBCB3"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\checks_optimized.log",
+    "Hash": "78C0CD9DD61818412915009EDABE658835D62017B289CD02A371A29F7A191E5E"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\checks_initial.log",
+    "Hash": "675E013A6E7116AD647C53D1AAB6AFB04D1EDCD4A7B19391EA222F191D9C3CE4"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\tests\\crowd\\checks_filtered.log",
+    "Hash": "78C0CD9DD61818412915009EDABE658835D62017B289CD02A371A29F7A191E5E"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_view.gd.uid",
+    "Hash": "98B568BFEB5629565A6987F9BA02BD176CD1EC93CB727194D361FD4A7DD65F7C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_view.gd",
+    "Hash": "961251EA0609A749B1C849C3BC5AA1649CC5FD25DC264D9D8A6428069E6C8F38"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_output.gd.uid",
+    "Hash": "06EB65549687F7BE3A41D6A15DD10628A6993A7C2412A3DF743ECFFBC8DB393B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_output.gd",
+    "Hash": "CCCEB2BE21DEAC2D8F0188CB10863801C05326548D5735CE2020CD8CFB795D85"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_live.gd.uid",
+    "Hash": "0AEF59490CCB8879FEF5EFC62708D369C608B7AD33DC37C187764F57AAA79631"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_live.gd",
+    "Hash": "EE0C971D6F0FB0A42242C76E97B935068633B5B82B2B96F042F94CD9C7AC9BF0"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_input.gd.uid",
+    "Hash": "21C01032B1D571D999F8B8DC12FD1C7784ABF151FCD544806CAAF3CAF9030F8D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_input.gd",
+    "Hash": "94D75AC25E501CE1B832E47561D625973ECC0AFAABC4BA71D8C92106C0C8D9F9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_core.gd.uid",
+    "Hash": "B1B18A086194B2BFFA698CDD0BB7BD997D72EA0FAE1FC5A4849D8EEB1E1897B1"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\ops\\rt_core.gd",
+    "Hash": "D6CC90D0387DC965CCEB62036660AB90D2027527D6F97C336C7F8FA1DE975801"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\mcp_runtime.gd.uid",
+    "Hash": "B6C9EC77FD09B3847F4431DB906BE29AF1F720D9432934E1322BC21CCC17333D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\runtime\\mcp_runtime.gd",
+    "Hash": "3F2AA840DFC8A65F9FB81C832E1127D1A66829A51DE2B8AE60EA948267565C07"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\README.md",
+    "Hash": "5761A142CE1C4A8B8F849117C50EAC639C213CBF132C0D0236EEF1902B03C5BD"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\plugin.gd.uid",
+    "Hash": "0E483B6FC244EB2E7B089E258B98F6F3455B7284C4FC5E990BAF4700F65F922D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\plugin.gd",
+    "Hash": "F77182091111D073FA42C63E61F6198814EB6226172699D4B7ED511429F0DBA9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\plugin.cfg",
+    "Hash": "F8630F7DD7E94BFB0F8A7F868F8709987C257D9165360A78FFEE17CB4BDDBBC9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.claude\\skills\\godot-architecture\\SKILL.md",
+    "Hash": "996DE1192970AF47B7855C03A3D06F57EBFE7773EC921F80466AC3EC5B4ABCED"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\benchmarks\\crowd_benchmark.gd.uid",
+    "Hash": "4C7598C4B4AD5C320C97A7769AFCAF55B652D56346F840EEEE3449DC2BC0B0A8"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\benchmarks\\crowd_benchmark.gd",
+    "Hash": "4F66257C7EA0E5210CFA7B573B2EFAF16C7E483BBA0BFC3BE90156CAAF2408D8"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\benchmarks\\benchmark_recorder.gd.uid",
+    "Hash": "A63C7E229B2A42B7E382B811A512D9500EC5669A40EBCD598709E8BBB01D4918"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\benchmarks\\benchmark_recorder.gd",
+    "Hash": "2574DD711267895A5C47CE732568A0E0DE1BF52DB4940F798DB88DAFE0F6913A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.claude\\skills\\crowd-benchmark\\SKILL.md",
+    "Hash": "E286881B953132C230986BD945060519F56F23DE394C3B9118969F0D3C5DCFF1"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.claude\\skills\\crowd-ai-design\\SKILL.md",
+    "Hash": "B04DE90A8F7E475589FF0281E682853DBF520058B61D43B76FD8DD545D3056B6"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\art_camera.gd.uid",
+    "Hash": "5198AFC754A6FA3E87FA72D83ABB238EBAD40EF7F60E7C188C839329035E1D27"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\art_camera.gd",
+    "Hash": "66080D8182BD36B0A912A84C13BF50F06D881CF4E35E21E1FB071E365F285847"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\art_batch_builder.gd.uid",
+    "Hash": "3943F3B5360ACFA609A31BAA6ACDCE695AB994B05F030BD41876F382356977E3"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\art_batch_builder.gd",
+    "Hash": "C6FF8F9B2C06AE9A1CDDFB2282915AC065152B50052226ADE09F4ADB675ED16C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\art_direction.gd.uid",
+    "Hash": "29068E4AB3F2C011D6228CDE847B370AA606B1AC71A518ACA5BD4F07F65BD738"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\art_direction.gd",
+    "Hash": "2CAB22D8EFB5F3F1452C6C8E195C5B710BAE2E493F18D604B83B63E38D39F48E"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\character_camera.gd",
+    "Hash": "93E2656D2530AC6A91CB01ADE217D7B1BFE9BD84A36A298BF4AE7908204D6093"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\character_camera.gd.uid",
+    "Hash": "B8DB6E97B37EDEE06B0FB5D2823644F9D07B8C950BEC8F5F5123EC47D1DAB7B1"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\audio_ops.gd",
+    "Hash": "7A712B1B967755FEDF9E3770F813D95864C4E78EF72AFCD6E242DE32519139A1"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\anim_ops.gd.uid",
+    "Hash": "0D7B58F55ED1817852556EC96BA53596D1E70B431917D41A03514175B85A591D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\anim_ops.gd",
+    "Hash": "CBFB0788D42909EDB8DF5AA8AB1CF54A68184283964BA2B95B135F10CF3C98F9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\LICENSE",
+    "Hash": "D5607DF2C8B8DAEC583999DB6CF964B0C62E6E0DC04A7833E50789F7ACA984FA"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\reference_vehicle.gd.uid",
+    "Hash": "B5C9C690E67AB8790F53DB038A48C32B2C9777B30C35CE4C584BF2A4079B8D81"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\reference_vehicle.gd",
+    "Hash": "3D5DBED22BCEEAC1F25774BA4163A24A58A4655E54E05B5FE446DD83E3820C33"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\reference_human.gd.uid",
+    "Hash": "2E1A5685CDA66579B0514108F4B984D587398295C445729EDE7B68AC64589EBB"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\reference_human.gd",
+    "Hash": "92D60B274CBDAF6AEA4C80A8F99DF3B5383B9D102F60F1A14D3D335A3DEAF307"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\italian_street.gd.uid",
+    "Hash": "69003B40D98A6C96027AEE755A4716D917B0B03905838824088044BD17FACB62"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\italian_street.gd",
+    "Hash": "E2342FBBB2C38E05DB732CFB81C20F3C707D4298C0C9764C221FAA07ED2B9FC7"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\italian_building.gd.uid",
+    "Hash": "7E2A1C5DD5D8B401BC9E98F1B2F44A39F0E0F97DEBE5E072E4CD922B268D1317"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\italian_building.gd",
+    "Hash": "FF3A09A089715BBC3DA87D500E43BFB464195EEE5974DD0FBEAEE2B4ED53EFEE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\world_ops.gd.uid",
+    "Hash": "280CC458D72297A67301E639F8F9052C7CBE2EDF5EC9981DBCDA18CD9E88A583"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\character_stage.gd.uid",
+    "Hash": "F0889BF230B644FE5490779975FC37584BB85711E501D4A56FBBC8AEBBA69351"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\world_ops.gd",
+    "Hash": "03CFA25AF0B2B0B85A80F9CFC3841F2B3E833EAFB0E703B7B410709C215C9EE3"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\character_stage.gd",
+    "Hash": "6111B30132611601863261ADC343D619312D1C8B12F403396F70C5165947C1D4"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\visual_ops.gd.uid",
+    "Hash": "18BED9D3265C5B6C8799123600B200536CBA077A8ACB9C9F1D86E6EC3A6B15EF"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\character_showcase.gd.uid",
+    "Hash": "92EB5FC23AFB4D6B57CEE878911573F6FDC718568CD8122902299B4F64090B14"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\visual_ops.gd",
+    "Hash": "19A32488FA0E666671C695E2097339AFFD30355230469C55EF16BD067DBFEB22"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\scripts\\art_tests\\character_showcase.gd",
+    "Hash": "A71B9ACC210E945E97A8366A1B674133C7EBD0CA76F4A0201292D763308D18FA"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\signal_ops.gd.uid",
+    "Hash": "4024572F179DA80D4C15FFC8E5A56036A9F78D516BEF814ED1E71748295EF27C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\signal_ops.gd",
+    "Hash": "49C9B5AED0C649C44B7BAD4DD773B92BA44ADE548BC7F65BA01FA4EFF6129893"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\scene_extra_ops.gd.uid",
+    "Hash": "78E043933EC0AD89EE92FAF9775F0ACCBB4F7845764DC199571642F27B997EE2"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\scene_extra_ops.gd",
+    "Hash": "0ACB5B20A8856B50C76420693C508E937E545B0DCBBF2BD984B5ADA9D300C0C7"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\resource_ops.gd.uid",
+    "Hash": "AAD055DBD84BEF650856F4C9D343A8CD44E80632CBFFE2C26F5DA0825ED5AB98"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\resource_ops.gd",
+    "Hash": "DC4939D66A9A942E0D2B925321A3376B1F697A855F3C685868FC1CD82A0629F1"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\project_ops.gd.uid",
+    "Hash": "4F8783B4BAA1739929D77DBEA721CD98744A5A9B511E6ABB708430E224B65651"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\project_ops.gd",
+    "Hash": "E13D499B43AA77B96F4AE9B6201BB0B914D7371C2009C460E6B5D9267E77D104"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\import_ops.gd.uid",
+    "Hash": "91193B0834485BBEAF5EC19F9B077CE15002D0F7796F758D1A70D44EDC770C1E"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\import_ops.gd",
+    "Hash": "0F6B85B6E01AD0FE3824BC0BA7CF88FF96880AA8740F674FA885127AC7F04A47"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\export_ops.gd.uid",
+    "Hash": "6DD53D4F74B18219D5F0F5D80183FBA14C29945916BA6081DAEC174AE0D43488"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\export_ops.gd",
+    "Hash": "682264D1E1671DBD80AA5A305C8F85EF9F9F14CDD4D0FAE02469DDFBF3A23687"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\editor_view_ops.gd.uid",
+    "Hash": "AFE7F60B94F66F3BB52A11C3B069F6443A8258E2E1F69AAC6D50791C7AEB25D9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\editor_view_ops.gd",
+    "Hash": "28CCDAD90437662034A1F68A16114D586B4E763B9A4FCDD59C4BCFBC88D6514D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\editor_ui_ops.gd.uid",
+    "Hash": "BE4F38D4B0FA4963F65BCAFDB4C243E3FBB714AEACA5D974158A42F49EE6DC59"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\editor_ui_ops.gd",
+    "Hash": "F269A4278352860696526D280B8C4455EAB1A643783E7C1280DE41C783CFED97"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\ops\\audio_ops.gd.uid",
+    "Hash": "10417DA43AE144C2A7A5D4A3AF8579051DB41BB531AF0D38FBA19AAE6C6C368A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\headless\\runner.gd.uid",
+    "Hash": "227AEF036A329D005843022D776F8F3B3A144E9E1A272697FB856C81C8C3157C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\headless\\runner.gd",
+    "Hash": "11663670735D668769D2DFCFB497D2E2C08798EA8EE8E43FE52E1E55866EB812"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\headless\\headless_backend.gd.uid",
+    "Hash": "5841B29BCB76E22D8D640B1188C878CDA9821618AA7D11E4B0150EBED5246C1D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\headless\\headless_backend.gd",
+    "Hash": "3486460AF5863BEBB426E897B521C5B2CD497DF353CF0C76025D1DC99D8298C5"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.agents\\skills\\godot-visual-qa\\SKILL.md",
+    "Hash": "CF2543B0C19CA00B94C890980B8240A9EA0ED05167260050974B84293C50A85D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.agents\\skills\\crowd-benchmark\\SKILL.md",
+    "Hash": "E286881B953132C230986BD945060519F56F23DE394C3B9118969F0D3C5DCFF1"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.agents\\skills\\godot-architecture\\SKILL.md",
+    "Hash": "996DE1192970AF47B7855C03A3D06F57EBFE7773EC921F80466AC3EC5B4ABCED"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.agents\\skills\\godot-debugging\\SKILL.md",
+    "Hash": "94EE5D904ACA4F48C913199B3C28649E37FBBD4062F948040EEA5D5138023CDC"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\editor\\editor_backend.gd",
+    "Hash": "E1404A1D1132B10C7A884CB4E903F9377B24D38672F87D2493BF7905D33948D0"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\editor\\editor_backend.gd.uid",
+    "Hash": "987F74E8770860CACF6DDA99FCCF652A170BAB4815508EAECFDE162749A4513A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\editor\\game_relay.gd.uid",
+    "Hash": "EC70FFD9F97B18033190E29FE42D3E91E3E9FF4CF0B83F5445DACBA693FDE1BA"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\editor\\game_relay.gd",
+    "Hash": "B9BA030D0BBDB2D1A3F291A9097935AFD64C4BCC0FE281C2D315592E0B381C33"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\.agents\\skills\\crowd-ai-design\\SKILL.md",
+    "Hash": "B04DE90A8F7E475589FF0281E682853DBF520058B61D43B76FD8DD545D3056B6"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\bridge\\session_file.gd.uid",
+    "Hash": "F1D5A7B18522EEAC2B63C5A051C3AEE7501C6789F253AC70E0E5FBB8CC5AA279"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\bridge\\session_file.gd",
+    "Hash": "1DB73FA129B159C8993D2BF93150DD0F1822B900B31718EDC226ECE96CCB132F"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\bridge\\bridge_server.gd.uid",
+    "Hash": "7AF15DDB678F594C19481556F89D9C484D58D826DE841192494CB5E147AED4DE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\bridge\\bridge_server.gd",
+    "Hash": "94CCA7590ED0D2300D14ED7EC4EDF208BE3A136BA1733946427AAE111442AF24"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\world_tileset.gd.uid",
+    "Hash": "CC7CC9253B3F5B6839C4538C1E80A7E46C37ABF76C0126FABCB323A454F155D8"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\world_tileset.gd",
+    "Hash": "A86C32FEA3D9C1629BD22CEF06C5E6538F4AA951E0657F0A990B50B500365927"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\world_nav.gd.uid",
+    "Hash": "D5EC00869F79C79400CFFA7B85548E9A9E8503BA226084DD46432AF6F8DCE037"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\world_nav.gd",
+    "Hash": "B071ABF3F3E74FBAD3DA4684A8516F69DBA9A2817EE3C3EE013537B21242D00A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\visual_shader_ports.gd.uid",
+    "Hash": "D8507C6F3072206FDC50F8CBEF4BAEBAAAFE055067CCC23D944175E48C6A5EC6"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\visual_shader_ports.gd",
+    "Hash": "09DE531E4F673463CE17DE8A9BE2E81ABD5EC869EC4D57040624E1FD68AC4B16"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\variant_codec.gd.uid",
+    "Hash": "191D9AC38E9738E57E937954F8CF84A2CCE70583012FEAEA2D7438F172F04E01"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\variant_codec.gd",
+    "Hash": "87FD0EFE91CD4DA24D80C0AEFA0653C0E431272DEC081137896464CCF0CF8DE4"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\sprite_frames_ops.gd.uid",
+    "Hash": "2596F92FF99A6EB512B35A6A72A4110B841A7D24DB98B1E4EA40145E45879A1A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\sprite_frames_ops.gd",
+    "Hash": "B5EB4FEC8C1A7DA1C1953B422C0A192E8E825D468261EE3E3F8ED194D1B94FDF"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\script_validate.gd.uid",
+    "Hash": "960629C58B637091C7CF9ACED418B3F220A67EAAA68F23CAFC0F9ED622F707F5"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\script_validate.gd",
+    "Hash": "A1BD4A725E240054A96BC6FE556DCB0F14953F496923C917F1F25AC93A2D13C6"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\scene_ops.gd.uid",
+    "Hash": "F3B0E9C47B77511EE37F936A46D8E8737B876E94873D88450F42964B3D5BA92A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\scene_ops.gd",
+    "Hash": "5EA8B8971A76E54592052267E48A33C8AE1A093FA05246C755B52EF1723ECF7D"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\scene_batch.gd.uid",
+    "Hash": "248F8F03610027CD1B069B93E07AB376DDEC617B6F8826D68716916B3E9D2DA9"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\scene_batch.gd",
+    "Hash": "8582447459D125CBB9D9662EDCDF0B8114FEF1972097E158FBF570D33D664FB6"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\runtime_override.gd.uid",
+    "Hash": "43A22596D9E95185F28EEDEEB737909DEB85296349E26817E4D4280F4A86DA0B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\runtime_override.gd",
+    "Hash": "8D3D540B32AE22BE193098B6423B3E7F8B49A4CE59F9C4EDB0FDA115737A36D8"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\res_save.gd.uid",
+    "Hash": "56027E8FB95AF2645A45EC7F5777C619BA2EBB444B50DF7A03DE24C65249F66B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\res_save.gd",
+    "Hash": "5402713DE31C463F2AB913C4E72D7BBD1361BE1DC6CB9C3562F92453B9EA1348"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\res_paths.gd.uid",
+    "Hash": "0D91F71B68D7CCCEE064216E386E90CB04CF51CBB43D630942317672AD32FE16"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\res_paths.gd",
+    "Hash": "2D69E80007CE50140A1935196A3EBF8411E77189F005007928533A4C1A051F1C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\resource_util.gd.uid",
+    "Hash": "5506F819D9D4B25C52C678F12047547E50D9D2F61B4225E74A2B1587644DB3B8"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\resource_util.gd",
+    "Hash": "8DEC6F197E49301CF45FDC4006092CFCF450910851FACCC87CAE56345A80DB09"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\project_validate.gd.uid",
+    "Hash": "95374646830B18CEDD8550B7D31E4521A66B05231594B78FE220C80BEAAEF8DE"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\project_validate.gd",
+    "Hash": "A081EE5ED3F8383FF7B38878AA9D2829A2DEBE886B6CF9C4788A9ACC3E0A6D64"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\project_input.gd.uid",
+    "Hash": "44A0DE33B790F0A0750195EF1712EE7D58573DDB96FA6ACFEC77DBAB5ED514C7"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\project_input.gd",
+    "Hash": "03B3B216548AFDE9051EBC1F2F87356F1916F94D264470EC5D1B30C3ECCE8A91"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\params.gd.uid",
+    "Hash": "325B4E4F6DB1F977E40CE5A09B61E1E387484F3226C4146AEEAC5C7561EEBEAA"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\params.gd",
+    "Hash": "8717DE744A5B8F0036BDABE5DC0F3AD5BC296A45D5268870DB7C5DD48AE522EC"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\node_paths.gd.uid",
+    "Hash": "2F91BFD11A38DCD0A4E782A71A47DB3AB0F502F1E2C8CC2BD92A7EF9EC816C97"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\node_paths.gd",
+    "Hash": "9EFF4D4291F327F3DA5FD1FCAB896190A1D54898ABBE75FB619FF9011F449E3F"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\methods.gd.uid",
+    "Hash": "59254F781868F0D366B48CF17C8295CBE38D7CD3F44FE711C4E82CBDAD2C8E29"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\methods.gd",
+    "Hash": "1D2911EB89964C19FA1732FB964073976CEED73DB17404D0DEE7328446295B06"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\mcp_result.gd.uid",
+    "Hash": "66CD1B51380847EF4851247B585776F3BCA8753280F26B2FD4E10E83D7541F3C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\mcp_result.gd",
+    "Hash": "6956B22442765063C78FB172BAED81BF16D13A547A6B62225B8D7144ACD67E1B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\log_buffer.gd.uid",
+    "Hash": "85B1F771B01E363AACC5918281DFE84DCCA31588DE8C32363A684E7451D1DCA7"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\log_buffer.gd",
+    "Hash": "28A262B34C65FD5063E3F1080E85427A5539C118957221F9AEF0C4F2305F0B92"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\import_defaults.cfg",
+    "Hash": "A027D6439FE493960E0B46CC43F7781D4C462427EA3A45BC026302447FB67BF6"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\fuzzy.gd.uid",
+    "Hash": "106904AB47C9C8187CA4B06BF55313C056AB796C779E651EF99144164A097878"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\fuzzy.gd",
+    "Hash": "5DC7A1B17F08286C803854FB8A234B23AE4B339619691F0773495C10EC79805F"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\export_defaults.cfg",
+    "Hash": "A2028FBB2A158F5CBA5C7A816709936B63A15DFBBA33839601B6CA84EACE7560"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\editor_scenes.gd.uid",
+    "Hash": "CB6546F0D15A2F96906824CD4660E1B7720EC9D0166EDA9277C142CA6676265B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\editor_scenes.gd",
+    "Hash": "174D3D9817CDC23A95B667A3D79EE39BF230D52F62D21322B1182B13BF986F3A"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\constants.gd.uid",
+    "Hash": "2DD986B0D6155286CDB29707BCE4DB6CFF2A4519B35B07E1C57BCC45BD4DCD5C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\constants.gd",
+    "Hash": "7D17289D3C09AC1A371F7602241016F07CA0C390FD1993D38A70D37B708FEF75"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\change_set.gd.uid",
+    "Hash": "429F528BA48C356CF06F375358167F66BE7E8844312AB7418707472344CB42B4"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\change_set.gd",
+    "Hash": "6335E90F8EFC9D7F987790E5813D6F5459897201649A4E7080CBD4909A66EAE7"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\anim_tree_ops.gd.uid",
+    "Hash": "00299B4F92FBEDCE74BBC645DC97AC936CF8F901E8B90B531E317E5500D6763B"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\addons\\godot_mcp\\core\\anim_tree_ops.gd",
+    "Hash": "77E7EB3299931192C2967F43F7EBA9351AB4369245BA4DD8AED43987394C6471"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\project.godot",
+    "Hash": "0DF87AE5182DFD8721E984C6362E45534B5D041526BAE0F7C576ACC7C203A67E"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\AGENTS.md",
+    "Hash": "0BC80FC2C4D59CC7376B8B69A97BE474FAA11221669DCC86D61B032AF20C2A6C"
+  },
+  {
+    "Path": "C:\\Users\\yuris\\Documents\\GitHub\\CivilUnrest\\civil-unrest\\CLAUDE.md",
+    "Hash": "27AC2C532025DBD877BC65E20F0CC27DD7D7D66382126E8074AAEE8BBBCC2EC8"
+  }
+]

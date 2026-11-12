@@ -1,5 +1,16 @@
 # Progressi CivilUnrest
 
+## Integrazione folla animata 3D e benchmark urbano — 2026-11-12
+
+- Nuova scena indipendente `scenes/benchmarks/UrbanCrowd3D.tscn`: core 2D a 30 Hz, adattatore e renderer animato esistenti, tre archetipi, varianti, LOD dinamici e camera isometrica. Ambiente urbano modulare riutilizzato; ostacoli visivi derivati dalla geometria del core. Nessun gameplay né duplicazione della simulazione.
+- Unica modifica a codice preesistente: `scripts/presentation/crowd_session.gd`, parametro opzionale dello scenario e segnale di tick completato. API precedente conservata; nessuna modifica agli algoritmi o al renderer dei personaggi.
+- Matrice grafica debug completa: 20/100/300/600/800, dispersi e congestionati, seed 20261112, 1152×648, MSAA 4×, limite 60/VSync off, LOD 2, 4+8 s per caso. Intel i3-1115G4/UHD, Godot 4.7.2. Congestionati: **20/100/300 = 60 FPS medi**, p95 17,35/19,77/26,56 ms; **600 = 55,12 FPS, p95 35,86 ms, CPU sim 5,519 ms/tick, renderer 13,585 ms/frame; 800 = 32,47 FPS, p95 52,97 ms, CPU sim 7,972 ms/tick, renderer 21,688 ms/frame**. Memoria statica media 69,46–85,70 MiB. Tutti i casi mantengono circa 30 tick/s, debito <0,034 s, zero bloccati/sovrapposizioni oltre 0,1 nelle letture diagnostiche. **60 FPS stabili non confermati; nessuna misura release.**
+- Costi maggiori a 800 congestionati: invio delle parti 11,672 ms/frame e pose 7,968 ms/frame, p95 pose 28,104 ms; ricampionamento simultaneo e trasformazioni per frame restano i colli di bottiglia CPU osservati. Nessuna ottimizzazione speculativa. Profiler MCP separato con statistica `present.self_ms` incoerente: conservata e scartata come misura, usati gli span strumentati.
+- Verifiche: import headless exit 0; **4.816 controlli nuovi** e **6.314 controlli personaggi** superati; runner originale 2D passato su otto casi, benchmark grafico 2D rieseguito a 1.000 nei due scenari. Avvio MCP, screenshot standard/ravvicinati, movimento/pose, LOD 0/1/2, pausa identica al tick 137 e ripresa, pan e rotazione verificati. Main, ItalianStreet e MCP_Test avviati separatamente e arrestati; zero errori/warning nelle prove finali.
+- Limiti: Idle/Turn verificati dal runner, ma non entrati naturalmente nei campioni integrati; nessun target di orientamento a riposo nel core. Assenza completa di scivolamento nelle inversioni/blend non certificata; contrasto dei vestiti scuri limitato da lontano. Matrice prestazionale misurata a LOD 2, non estesa ai LOD ravvicinati o a sessioni lunghe.
+- Conservazione dei sorgenti/configurazioni: 268/269 file protetti invariati, sola estensione autorizzata della sessione. Main, ItalianStreet, MCP_Test, core/benchmark 2D, project.godot, AGENTS, skills e addon invariati. Nessuna installazione o commit.
+- Risultati, metodologia, comandi, screenshot ed evidenze: [URBAN_CROWD_3D.md](URBAN_CROWD_3D.md). Prossimo passo proposto: distribuire le pose, ridurre il costo di invio delle parti e ripetere le misure prima di introdurre gameplay.
+
 ## Personaggi 3D modulari e showcase indipendente — 2026-11-12
 
 - Nuova scena `scenes/art_tests/CharacterShowcase.tscn`: 10/20 personaggi originali, archetipi civile/manifestante/polizia, varianti cromatiche, giacche/zaini e casco/gilet/equipaggiamento visivo. Luce coperta e palette coerenti con ItalianStreet, telecamera ortografica con zoom e comandi esistenti; nessun gameplay.

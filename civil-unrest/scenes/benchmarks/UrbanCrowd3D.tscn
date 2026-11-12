@@ -1,0 +1,59 @@
+[gd_scene format=3 uid="uid://cqfkbcl0ijon"]
+
+[ext_resource type="Script" uid="uid://cdhs886mhg26x" path="res://scripts/benchmarks/urban_crowd_3d.gd" id="1_qujsd"]
+[ext_resource type="Script" uid="uid://ca7wxa1kparis" path="res://scripts/presentation/crowd_session.gd" id="2_ract8"]
+[ext_resource type="Script" uid="uid://cdxjvph1owpxw" path="res://scripts/world/urban_environment.gd" id="3_p7443"]
+[ext_resource type="Script" uid="uid://cs8htgu7urqh3" path="res://scripts/benchmarks/urban_crowd_obstacles.gd" id="4_0m5ut"]
+[ext_resource type="Script" uid="uid://d3xx4w85pcyji" path="res://scripts/characters/character_renderer.gd" id="5_v2kqj"]
+[ext_resource type="Script" uid="uid://diqah3htlllma" path="res://scripts/camera/isometric_camera.gd" id="6_a8m5v"]
+
+[sub_resource type="Environment" id="Environment_8ue5f"]
+background_mode = 1
+background_color = Color(0.40784314, 0.45490196, 0.46666667, 1)
+ambient_light_source = 2
+ambient_light_color = Color(0.69411767, 0.74509805, 0.7764706, 1)
+ambient_light_sky_contribution = 0.0
+ambient_light_energy = 0.85
+
+[node name="UrbanCrowd3D" type="Node3D" unique_id=1868186182]
+script = ExtResource("1_qujsd")
+
+[node name="CrowdSession" type="Node" parent="." unique_id=1871543543]
+script = ExtResource("2_ract8")
+
+[node name="Environment" type="Node3D" parent="." unique_id=133485252]
+script = ExtResource("3_p7443")
+
+[node name="Barriers" type="Node3D" parent="." unique_id=1706643002]
+script = ExtResource("4_0m5ut")
+
+[node name="Characters" type="Node3D" parent="." unique_id=134488578]
+script = ExtResource("5_v2kqj")
+
+[node name="CameraRig" type="Node3D" parent="." unique_id=926180244]
+script = ExtResource("6_a8m5v")
+pan_bounds = Rect2(-40, -25, 80, 50)
+min_zoom = 12.0
+max_zoom = 110.0
+initial_zoom = 70.0
+
+[node name="Camera3D" type="Camera3D" parent="CameraRig" unique_id=1741043226]
+
+[node name="HUD" type="CanvasLayer" parent="." unique_id=1649256129]
+
+[node name="Status" type="Label" parent="HUD" unique_id=2040622859]
+offset_left = 18.0
+offset_top = 12.0
+theme_override_font_sizes/font_size = 16
+
+[node name="Daylight" type="DirectionalLight3D" parent="." unique_id=1297725455]
+transform = Transform3D(0.88294756, 0.39813447, -0.24878204, 0, 0.52991927, 0.8480481, 0.46947157, -0.748782, 0.46789092, 0, 0, 0)
+light_color = Color(0.85882354, 0.8901961, 0.8980392, 1)
+light_energy = 0.55
+shadow_enabled = true
+shadow_blur = 1.7
+directional_shadow_mode = 0
+directional_shadow_max_distance = 150.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=490729928]
+environment = SubResource("Environment_8ue5f")

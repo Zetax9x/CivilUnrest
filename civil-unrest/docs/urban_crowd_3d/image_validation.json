@@ -1,0 +1,38 @@
+﻿[
+    {
+        "file":  "animation_next.png",
+        "width":  1152,
+        "height":  648,
+        "sha256":  "28FD6DFDE8A0C4D4FA92484D5651D8163FBFE05A3011581CFDC2CD0598A73CF4"
+    },
+    {
+        "file":  "closeup.png",
+        "width":  1152,
+        "height":  648,
+        "sha256":  "B307C026101A99597D0F4E4AFDE1F94B492AD7E6C1AEB01F503436D1F0500396"
+    },
+    {
+        "file":  "congested_600.png",
+        "width":  1152,
+        "height":  648,
+        "sha256":  "3E7AC7F87D2AAC03795BF95AC417199E01D75896E2BD7F4A6B073D4401EB72EF"
+    },
+    {
+        "file":  "regression_italian_street.png",
+        "width":  1152,
+        "height":  648,
+        "sha256":  "F14D5CA984E3128E6844CE7F74E9CFE5EE9EE2657965E1F2F0D20EC93E9D4667"
+    },
+    {
+        "file":  "standard.png",
+        "width":  1152,
+        "height":  648,
+        "sha256":  "2815571A0A470F7C09C37B4F567EE002B9918945AED1A2B4446D082653DD1FE2"
+    },
+    {
+        "file":  "standard_initial.png",
+        "width":  1152,
+        "height":  648,
+        "sha256":  "8F51985621249DBAA30A1ECEC1AB10A78F67470E7C2B256BF53EC36B71FF72F2"
+    }
+]

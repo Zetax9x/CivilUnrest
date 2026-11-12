@@ -1,0 +1,339 @@
+{
+  "run_id": "59a73dd2",
+  "pause": {
+    "tick_a": 137,
+    "tick_b": 137,
+    "positions_equal": true,
+    "phases_equal": true
+  },
+  "resume_ticks": 180,
+  "resumed_camera": {
+    "bounds": "Rect2(-40, -25, 80, 50)",
+    "pitch_degrees": -45,
+    "position": "Vector3(-8.161879, 0, -14.161881)",
+    "projection": 1,
+    "size": 70,
+    "yaw_degrees": 135
+  },
+  "medium_lod": {
+    "run_id": "59a73dd2",
+    "child_count": 3,
+    "class": "Node3D",
+    "path": "Characters",
+    "properties": {
+      "lod": 1,
+      "part_count": 2130,
+      "pose_updates": 100,
+      "total_pose_updates": 64600
+    },
+    "script": "res://scripts/characters/character_renderer.gd"
+  },
+  "probe_a": {
+    "run_id": "59a73dd2",
+    "results": [
+      {
+        "action": "call",
+        "method": "get_character_probe",
+        "path": "Characters",
+        "return": {
+          "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.1435299, -0.30575153)",
+          "heading": 3.03553104400635,
+          "phase": 0.948682129383087,
+          "position": "Vector3(-18.90913, 0.18, -12.286254)",
+          "rendered_thigh": "Transform3D(-0.15273687, 0.017466081, 0.009928305, 0, 0.11585154, -0.13356155, -0.016260536, -0.1640607, -0.093257576, -18.825531, 0.8257001, -12.119335)",
+          "state": "Run",
+          "thigh": "Transform3D(1, 0, 0, 0, 0.5746604, -0.8183919, 0, 0.8183919, 0.5746604, -0.105, 0.7875364, 0)"
+        }
+      }
+    ]
+  },
+  "probe_b": {
+    "run_id": "59a73dd2",
+    "results": [
+      {
+        "action": "call",
+        "method": "get_character_probe",
+        "path": "Characters",
+        "return": {
+          "foot": "Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.105, 0.30599362, 0.10045028)",
+          "heading": -1.57921934127808,
+          "phase": 0.636100947856903,
+          "position": "Vector3(-1.4115113, 0.06, -3.3194978)",
+          "rendered_thigh": "Transform3D(-0.0012937596, -0.12750971, -0.12640229, 0, 0.15614954, -0.10322581, 0.15359455, -0.0010740415, -0.0010647135, -1.2892245, 0.69825375, -3.4192715)",
+          "state": "Run",
+          "thigh": "Transform3D(1, 0, 0, 0, 0.77455133, -0.6325111, 0, 0.6325111, 0.77455133, -0.105, 0.81975794, 0)"
+        }
+      }
+    ]
+  },
+  "runtime": {
+    "run_id": "59a73dd2",
+    "running": true,
+    "exit_code": null,
+    "errors": 0,
+    "warnings": 0,
+    "lines": [
+      "0 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "1 OpenGL API 3.3.0 - Build 30.0.100.9805 - Compatibility - Using Device: Intel - Intel(R) UHD Graphics",
+      "2 "
+    ],
+    "next": 3,
+    "more": false,
+    "dropped": 0
+  },
+  "main": {
+    "run_id": "89c48709",
+    "running": true,
+    "exit_code": null,
+    "errors": 0,
+    "warnings": 0,
+    "lines": [
+      "0 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "1 OpenGL API 3.3.0 - Build 30.0.100.9805 - Compatibility - Using Device: Intel - Intel(R) UHD Graphics",
+      "2 "
+    ],
+    "next": 3,
+    "more": false,
+    "dropped": 0
+  },
+  "italian_street": {
+    "run_id": "670e66f6",
+    "running": true,
+    "exit_code": null,
+    "errors": 0,
+    "warnings": 0,
+    "lines": [
+      "0 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+      "1 OpenGL API 3.3.0 - Build 30.0.100.9805 - Compatibility - Using Device: Intel - Intel(R) UHD Graphics",
+      "2 "
+    ],
+    "next": 3,
+    "more": false,
+    "dropped": 0
+  },
+  "mcp_test": {
+    "a": {
+      "run_id": "cb3f22e7",
+      "child_count": 2,
+      "class": "Node2D",
+      "path": ".",
+      "properties": {
+        "get_test_state()": {
+          "agent_count": 20,
+          "all_finite": true,
+          "fps": 16,
+          "minimum_distance": 94.1369247436523,
+          "motion_paused": false,
+          "pause_toggles": 0,
+          "positions": [
+            [
+              184.700119018555,
+              199.75
+            ],
+            [
+              324.049865722656,
+              230.484802246094
+            ],
+            [
+              579.977233886719,
+              154.424209594727
+            ],
+            [
+              822.084228515625,
+              235.858810424805
+            ],
+            [
+              967.995544433594,
+              191.824691772461
+            ],
+            [
+              177.590957641602,
+              294.829040527344
+            ],
+            [
+              345.788146972656,
+              363.189910888672
+            ],
+            [
+              555.028198242188,
+              278.871398925781
+            ],
+            [
+              837.139526367188,
+              334.858367919922
+            ],
+            [
+              970.742309570313,
+              336.611145019531
+            ],
+            [
+              158.485046386719,
+              397.538909912109
+            ],
+            [
+              371.217834472656,
+              482.164398193359
+            ],
+            [
+              536.632690429688,
+              415.936340332031
+            ],
+            [
+              838.839111328125,
+              428.979949951172
+            ],
+            [
+              986.632019042969,
+              475.9716796875
+            ],
+            [
+              133.352722167969,
+              513.127685546875
+            ],
+            [
+              392.391510009766,
+              587.572326660156
+            ],
+            [
+              530.539306640625,
+              560.130310058594
+            ],
+            [
+              826.651062011719,
+              526.1552734375
+            ],
+            [
+              1010.69793701172,
+              603.701721191406
+            ]
+          ],
+          "rendered_frames": 35,
+          "simulation_ticks": 21
+        }
+      },
+      "script": "res://tests/mcp/mcp_test.gd"
+    },
+    "b": {
+      "run_id": "cb3f22e7",
+      "child_count": 2,
+      "class": "Node2D",
+      "path": ".",
+      "properties": {
+        "get_test_state()": {
+          "agent_count": 20,
+          "all_finite": true,
+          "fps": 60,
+          "minimum_distance": 36.8833885192871,
+          "motion_paused": false,
+          "pause_toggles": 0,
+          "positions": [
+            [
+              236.700241088867,
+              199.75
+            ],
+            [
+              285.706848144531,
+              265.610290527344
+            ],
+            [
+              584.522644042969,
+              176.692306518555
+            ],
+            [
+              853.723388671875,
+              277.126220703125
+            ],
+            [
+              916.790466308594,
+              182.767196655273
+            ],
+            [
+              221.466323852539,
+              266.919372558594
+            ],
+            [
+              332.288879394531,
+              413.406951904297
+            ],
+            [
+              531.060424804688,
+              232.724227905273
+            ],
+            [
+              885.984741210938,
+              352.696502685547
+            ],
+            [
+              922.676391601563,
+              356.452453613281
+            ],
+            [
+              180.525085449219,
+              350.440521240234
+            ],
+            [
+              386.781066894531,
+              531.781127929688
+            ],
+            [
+              491.641479492188,
+              389.863586425781
+            ],
+            [
+              889.626708984375,
+              417.814178466797
+            ],
+            [
+              956.725769042969,
+              518.5107421875
+            ],
+            [
+              126.670104980469,
+              461.55859375
+            ],
+            [
+              432.153228759766,
+              615.207397460938
+            ],
+            [
+              478.583740234375,
+              562.279235839844
+            ],
+            [
+              863.509460449219,
+              489.4755859375
+            ],
+            [
+              1008.29559326172,
+              581.205749511719
+            ]
+          ],
+          "rendered_frames": 82,
+          "simulation_ticks": 45
+        }
+      },
+      "script": "res://tests/mcp/mcp_test.gd"
+    },
+    "runtime": {
+      "run_id": "cb3f22e7",
+      "running": true,
+      "exit_code": null,
+      "errors": 0,
+      "warnings": 0,
+      "lines": [
+        "0 Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org",
+        "1 OpenGL API 3.3.0 - Build 30.0.100.9805 - Compatibility - Using Device: Intel - Intel(R) UHD Graphics",
+        "2 ",
+        "3 MCP_TEST_READY agents=20 simulation_hz=30 seed=deterministic"
+      ],
+      "next": 4,
+      "more": false,
+      "dropped": 0
+    }
+  },
+  "limitations": [
+    "Idle and Turn tested through character_checks; not naturally entered during 12-second integrated cases.",
+    "Single-view captures do not prove absence of foot sliding during every collision/inversion.",
+    "MCP profiler present self_ms exceeds the profiling wall-clock duration; use instrumented CPU spans for timings."
+  ]
+}

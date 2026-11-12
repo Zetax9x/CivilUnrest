@@ -1,0 +1,11 @@
+Godot Engine v4.7.2.stable.official.ed1daf0bf - https://godotengine.org
+
+CROWD_CHECK kind=dispersed count=100 crossings=81 max_penetration=0.0000
+CROWD_CHECK kind=dispersed count=300 crossings=227 max_penetration=0.0000
+CROWD_CHECK kind=dispersed count=500 crossings=356 max_penetration=0.0000
+CROWD_CHECK kind=dispersed count=1000 crossings=648 max_penetration=0.0000
+CROWD_CHECK kind=chokepoint count=100 crossings=88 max_penetration=0.0000
+CROWD_CHECK kind=chokepoint count=300 crossings=161 max_penetration=0.0000
+CROWD_CHECK kind=chokepoint count=500 crossings=204 max_penetration=0.0000
+CROWD_CHECK kind=chokepoint count=1000 crossings=269 max_penetration=0.0000
+CROWD_CHECKS_PASS grid completeness boundaries determinism population movement obstacles separation traversal

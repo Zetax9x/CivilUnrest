@@ -1,5 +1,9 @@
 # Crowd Benchmark — CivilUnrest
 
+## Benchmark integrato 3D — 2026-11-12
+
+Completata la matrice debug 20/100/300/600/800 personaggi animati, dispersi e congestionati, nella scena indipendente `scenes/benchmarks/UrbanCrowd3D.tscn`. Metodologia, CPU simulazione/renderer, frame time, memoria, contatti, screenshot e limiti sono in [URBAN_CROWD_3D.md](URBAN_CROWD_3D.md). A 800 congestionati: **32,47 FPS medi, p95 52,97 ms**, simulazione circa 30 Hz, nessuna sovrapposizione oltre soglia nelle letture. Nessuna certificazione di 60 FPS stabili o release. Il benchmark 2D originale è stato rieseguito separatamente a 1.000 nei due scenari ed è rimasto funzionante; i risultati storici sotto sono conservati.
+
 ## Portata nei passaggi stretti — 2026-11-12
 
 Il blocco collettivo del caso di riferimento è risolto nel protocollo misurato: al tick 360 passano **328 agenti distinti**, contro 26 agenti/27 eventi iniziali; gli immobili scendono da 669 a **0**. Al tick 900 passano 735 agenti distinti e gli immobili restano 0. Non è una certificazione di 60 FPS stabili: il frame p95 finale a 1.000 agenti è 29.066 ms in debug standalone.

@@ -1,0 +1,164 @@
+{
+  "run_id": "59a73dd2",
+  "monitors": {
+    "audio": {
+      "output_latency_ms": 10
+    },
+    "engine": {
+      "display": "Windows",
+      "frames_drawn": 3288,
+      "max_fps": 60,
+      "physics_ticks_per_second": 60,
+      "rendering_method": "gl_compatibility",
+      "time_scale": 1,
+      "vsync": "disabled"
+    },
+    "memory": {
+      "message_buffer_max_mib": 0,
+      "static_max_mib": 109.25,
+      "static_mib": 101.56
+    },
+    "objects": {
+      "nodes": 34,
+      "objects": 1634,
+      "orphan_nodes": 0,
+      "resources": 33
+    },
+    "pipeline_compilations": {
+      "canvas": 0,
+      "draw": 0,
+      "mesh": 0,
+      "specialization": 0,
+      "surface": 0
+    },
+    "render": {
+      "buffer_mem_mib": 10.86,
+      "draw_calls_in_frame": 41,
+      "objects_in_frame": 150,
+      "primitives_in_frame": 1071540,
+      "texture_mem_mib": 29.05,
+      "video_mem_mib": 39.9
+    },
+    "time": {
+      "fps": 45,
+      "navigation_ms": 0.004,
+      "physics_ms": 0.177,
+      "process_ms": 36.79
+    }
+  },
+  "scripts": {
+    "seconds": 3.018,
+    "frames": 139,
+    "script_ms_per_frame": 17.651,
+    "functions": [
+      {
+        "file": "res://scripts/characters/character_renderer.gd",
+        "line": 97,
+        "function": "present",
+        "calls": 139,
+        "self_ms": 57976.934,
+        "total_ms": 58405.173,
+        "body_line": 98
+      },
+      {
+        "file": "res://scripts/characters/character_pose_library.gd",
+        "line": 16,
+        "function": "sample",
+        "calls": 332500,
+        "self_ms": 306.672,
+        "total_ms": 306.672,
+        "body_line": 17
+      },
+      {
+        "file": "res://scripts/simulation/crowd_movement.gd",
+        "line": 153,
+        "function": "_travel_fraction",
+        "calls": 56332,
+        "self_ms": 154.06,
+        "total_ms": 154.06,
+        "body_line": 154
+      },
+      {
+        "file": "res://scripts/simulation/crowd_movement.gd",
+        "line": 34,
+        "function": "integrate",
+        "calls": 90,
+        "self_ms": 126.571,
+        "total_ms": 347.618,
+        "body_line": 35
+      },
+      {
+        "file": "res://scripts/navigation/spatial_grid.gd",
+        "line": 75,
+        "function": "build_pairs",
+        "calls": 90,
+        "self_ms": 116.986,
+        "total_ms": 155.654,
+        "body_line": 76
+      },
+      {
+        "file": "res://scripts/characters/character_visual_state.gd",
+        "line": 28,
+        "function": "submit",
+        "calls": 83400,
+        "self_ms": 102.727,
+        "total_ms": 102.727,
+        "body_line": 29
+      },
+      {
+        "file": "res://scripts/characters/character_simulation_adapter.gd",
+        "line": 7,
+        "function": "submit",
+        "calls": 139,
+        "self_ms": 61.548,
+        "total_ms": 304.365,
+        "body_line": 8
+      },
+      {
+        "file": "res://scripts/simulation/crowd_movement.gd",
+        "line": 101,
+        "function": "separate",
+        "calls": 90,
+        "self_ms": 36.673,
+        "total_ms": 36.673,
+        "body_line": 102
+      },
+      {
+        "file": "res://scripts/simulation/crowd_simulation.gd",
+        "line": 37,
+        "function": "step",
+        "calls": 90,
+        "self_ms": 29.205,
+        "total_ms": 612.326,
+        "body_line": 38
+      },
+      {
+        "file": "res://scripts/simulation/benchmark_scenario.gd",
+        "line": 49,
+        "function": "destination",
+        "calls": 54000,
+        "self_ms": 20.801,
+        "total_ms": 20.801,
+        "body_line": 50
+      },
+      {
+        "file": "res://scripts/rendering/crowd_3d_adapter.gd",
+        "line": 17,
+        "function": "heading",
+        "calls": 83400,
+        "self_ms": 17.93,
+        "total_ms": 17.93,
+        "body_line": 18
+      },
+      {
+        "file": "res://scripts/navigation/spatial_grid.gd",
+        "line": 45,
+        "function": "rebuild",
+        "calls": 93,
+        "self_ms": 15.193,
+        "total_ms": 43.492,
+        "body_line": 46
+      }
+    ]
+  }
+}
