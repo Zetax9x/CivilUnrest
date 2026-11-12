@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://7qrebf6pbhpk"]
+
+[node name="Main" type="Node" unique_id=221736156]
+
+[node name="WorldHost" type="Node" parent="." unique_id=420764471]
+
+[node name="PlaceholderUI" type="CanvasLayer" parent="." unique_id=2062545626]
+
+[node name="Status" type="Label" parent="PlaceholderUI" unique_id=806934013]
+offset_left = 24.0
+offset_top = 24.0
+offset_right = 900.0
+offset_bottom = 120.0
+theme_override_font_sizes/font_size = 22
+text = "CivilUnrest
+Scena principale
+Scenario urbano non ancora integrato."

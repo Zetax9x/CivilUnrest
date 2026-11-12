@@ -1,5 +1,18 @@
 # Progressi CivilUnrest
 
+## Separazione degli ingressi del progetto — 2026-11-12
+
+- **Scena principale:** `res://scenes/main/Main.tscn`, impostata in `application/run/main_scene`. Contiene soltanto `Main` (Node), `WorldHost` (Node vuoto) e `PlaceholderUI/Status` (messaggio provvisorio). Nessuno script, autoload, caricamento del test o del benchmark.
+- **Integrazione futura:** istanziare la futura scena urbana sotto `Main/WorldHost`; simulazione, adattatore visivo e telecamera resteranno moduli separati. In questa modifica non sono stati creati contenuti 3D o gameplay.
+- **Struttura conservata:** `tests/mcp/MCP_Test.tscn` con tutti i file originali; `scenes/benchmarks/CrowdBenchmark.tscn`; test automatici in `tests/crowd/`; moduli esistenti in `scripts/simulation/`, `scripts/navigation/`, `scripts/rendering/` e `scripts/benchmarks/`. Nessuno spostamento, duplicazione o modifica degli algoritmi. Unica nuova directory: `scenes/main/`; nessuna cartella vuota per asset o script futuri.
+- **Main tramite MCP:** avvio esplicito con `godot_run_start(mode="process", scene="res://scenes/main/Main.tscn")`, run `34b47b07`; albero runtime con i soli quattro nodi attesi, zero errori/warning.
+- **Avvio progetto / F5:** verificato tramite `godot_run_start(mode="editor", scene="main")`, che nel backend chiama `EditorInterface.play_main_scene()`. Avvia Main anche con la scheda CrowdBenchmark selezionata; albero runtime confermato e zero errori/warning. Non è stata simulata la pressione fisica del tasto F5 né verificata una sua eventuale rimappatura locale.
+- **Test MCP originale:** avvio separato, run `4109ce24`, 20 agenti e posizioni finite; SPAZIO mette in pausa (posizioni e tick identici in due letture al tick 245), poi riprende (tick 264 e posizioni cambiate). Zero errori/warning.
+- **Benchmark 2D:** avvio separato, run `71f9efc4`, 1.000 agenti nello scenario `chokepoint`; tick 512 → 552, transiti unici 466 → 500; sovrapposizioni, posizioni invalide e agenti bloccati pari a zero nelle due letture. Zero errori/warning. È un controllo funzionale: non è stata ripetuta la suite prestazionale e questi campioni non sostituiscono `docs/BENCHMARK.md`.
+- **Parsing/caricamento:** Godot 4.7.2, `--headless --path . --scene res://scenes/main/Main.tscn --quit-after 3`, exit code 0 e nessun errore. Le altre due scene sono state caricate ed eseguite dal vivo nei controlli sopra.
+- **Conservazione:** confronto SHA-256 prima/dopo, identici tutti i 193 file presenti in `tests/mcp/`, `tests/crowd/`, `scripts/`, `scenes/benchmarks/`, `.agents/skills/`, `.claude/skills/` e `addons/`. Tutte le esecuzioni avviate sono state arrestate. Nessun commit creato.
+- **Prossimo passo:** progettare la scena urbana solo su richiesta; mantenere test e benchmark avviabili singolarmente tramite il rispettivo percorso o F6.
+
 ## Portata nei passaggi stretti — 2026-11-12
 
 - **Completato nel protocollo di riferimento:** a 1.000 agenti/tick 360, 27 eventi iniziali (26 ID) → 328 ID distinti; bloccati 669 → 0, overlap oltre 0.1 e posizioni invalide 0. Di questi, 316 hanno già superato interamente il varco.
